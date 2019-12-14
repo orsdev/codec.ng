@@ -13,14 +13,22 @@
 
  &__bg {
   display: flex;
+  width: 100%;
   background-color: $topnav-bg;
   padding: .4rem .8rem .4rem .8rem;
   align-items: center;
  }
 
- .form__search {
-  flex: 0 0 22%;
- }
+.group-1 {
+ display: flex;
+ flex: 0 0 30%;
+}
+
+.group-2 {
+ display: flex;
+ flex: 0 0 70%;
+ align-items: center;
+}
 
  &__search {
   border-radius: 2px;
@@ -51,7 +59,7 @@
 }
 
 &__links{
- flex: 0 0 30%;
+ flex: 0 0 45%;
 }
 
 &__links-container li{
@@ -66,44 +74,18 @@
 }
 
 .auth {
- flex: 0 0 40%;
- justify-self: end;
+ flex: 0 0 52%;
 
  &__buttons {
  float: right;
- display: flex;
- align-items: center;
 
  .btn {
   padding: 7px 18px;
+ }
+
+ .signup-btn {
   font-weight: 700;
  }
  }
-}
-
-.world {
- background-color: black;
- height: 40px;
- width: 40px;
- border-radius: 100%;
- -webkit-border-radius: 100%;
- -moz-border-radius: 100%;
- -ms-border-radius: 100%;
- -o-border-radius: 100%;
- position: relative;
- z-index: 1;
-}
-
-.world .fas {
- font-size: 1.5rem;
- position: absolute;
- z-index: 20;
- top: 50%;
- left: 50%;
- transform: translate(-50% , -50%);
- -webkit-transform: translate(-50% , -50%);
- -moz-transform: translate(-50% , -50%);
- -ms-transform: translate(-50% , -50%);
- -o-transform: translate(-50% , -50%);
 }
 }

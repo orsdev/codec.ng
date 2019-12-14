@@ -63,3 +63,54 @@
  //CSS
  
 }
+
+@media (max-width: 1256px) {
+ .topnav {
+
+  &__bg {
+   display: inline-block;
+  }
+
+  .group-1 {
+   display: grid;
+   gap: 10px;
+   grid-template-columns: 70px 1fr;
+  }
+ 
+  .group-2 {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+  }
+
+  &__search {
+   width: 92% !important;
+  }
+
+}
+
+}
+
+@media (max-width: 594px) {
+ .topnav {
+  &__search {
+   width: 80% !important;
+  }
+
+}
+
+}
+
+@media (max-width: 990px) {
+ .hero {
+ 
+  &__bg {
+   padding: 40px 1rem;
+  }
+
+ &__header {
+   font-size: 2rem;
+  }
+
+}
+
+}

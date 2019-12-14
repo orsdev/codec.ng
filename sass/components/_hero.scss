@@ -1,0 +1,68 @@
+@import "./variables";
+.hero {
+ width: 100%;
+ color: white;
+
+ &__bg {
+  background: linear-gradient(90deg,#232021 0,$deepblue);
+  padding: 80px 1rem;
+ }
+
+ &__header {
+  font-size: 3.5rem;
+ }
+
+ &__green {
+  color: #83c11f;
+ }
+
+ .signup__btn {
+  font-weight: 700;
+ }
+
+ &__courses{
+  display: grid;
+  justify-content: center;
+
+  &-item {
+   border-radius: 10px;
+   background: white;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   cursor: pointer;
+   transition: transform .3s;
+
+   &:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+   .card {
+    height: 100px;
+    width: 110px;
+
+    &-body {
+     padding: 0;
+     padding-top: 20px;
+    }
+   }
+
+   i {
+    display: inline-block;
+    font-size: 2.5rem;
+   }
+}
+
+&-text {
+ font-weight: 700;
+ font-size: .9rem;
+}
+
+ }
+ 
+}
