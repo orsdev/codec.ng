@@ -58,5 +58,17 @@ $(document).ready(function() {
 })(jQuery);
 
 
-//call counterUp
- // $('.counter').counterUp();
+// call counterUp
+ $('.counter').counterUp();
+
+
+ ///call slider
+ $(document).ready(function () {
+  $('.slider').slick({
+
+   infinite: true,
+   slideToShow: 1,
+   slideToScroll: 1
+
+  });
+ });
