@@ -102,13 +102,18 @@
 
 @media (max-width: 990px) {
  .hero {
- 
+  text-align: center;
+
   &__bg {
    padding: 40px 1rem;
   }
 
  &__header {
    font-size: 2rem;
+  }
+
+  .card {
+   width: 90px;
   }
 
 }

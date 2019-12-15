@@ -2,9 +2,10 @@
 // @import "components/utilities";
  @import "components/header";
  @import "components/hero";
+ @import "components/courses";
 // @import "components/navigation";
 // @import "components/button";
-// @import "components/animation";
+ @import "components/animations";
 // @import "components/class";
 // @import "components/features";
 // @import "components/stories";
@@ -30,4 +31,5 @@ body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
