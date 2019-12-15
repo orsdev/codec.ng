@@ -57,5 +57,6 @@ $(document).ready(function() {
   };
 })(jQuery);
 
+
 //call counterUp
- $('.counter').counterUp();
+ // $('.counter').counterUp();

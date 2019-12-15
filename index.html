@@ -30,26 +30,32 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> -->
+
+ <!-- Slick -->
+ <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+ <link rel="stylesheet" type="text/css" href="/css/slick.css" />
+
  <link rel="stylesheet" href="css/font-awesome.min.css">
  <link rel="stylesheet" href="css/bootstrap.min.css">
  <link rel="stylesheet" href="css/style.css">
  <title>Codec | E-learning</title>
 </head>
+
 <body>
  <!-- SPINNER -->
-  <div class="loader">
-    <div class="sk-cube-grid">
-  <div class="sk-cube sk-cube1"></div>
-  <div class="sk-cube sk-cube2"></div>
-  <div class="sk-cube sk-cube3"></div>
-  <div class="sk-cube sk-cube4"></div>
-  <div class="sk-cube sk-cube5"></div>
-  <div class="sk-cube sk-cube6"></div>
-  <div class="sk-cube sk-cube7"></div>
-  <div class="sk-cube sk-cube8"></div>
-  <div class="sk-cube sk-cube9"></div>
-</div>
-    </div>
+ <div class="loader">
+  <div class="sk-cube-grid">
+   <div class="sk-cube sk-cube1"></div>
+   <div class="sk-cube sk-cube2"></div>
+   <div class="sk-cube sk-cube3"></div>
+   <div class="sk-cube sk-cube4"></div>
+   <div class="sk-cube sk-cube5"></div>
+   <div class="sk-cube sk-cube6"></div>
+   <div class="sk-cube sk-cube7"></div>
+   <div class="sk-cube sk-cube8"></div>
+   <div class="sk-cube sk-cube9"></div>
+  </div>
+ </div>
  <!-- HEADER SECTION -->
  <section id="topnav" class="topnav">
   <div class="topnav__container">
@@ -199,7 +205,7 @@
   </div>
  </section>
 
- <!--COURSES SECTION--> 
+ <!--COURSES SECTION-->
  <section class="courses mt-5 w-100" id="courses">
 
   <!-- <div class="courses__type text-center w-100">
@@ -1269,44 +1275,97 @@
     </div>
    </div>
   </div> -->
-  
+
  </section>
 
  <!-- COUNTER SECTION -->
  <section class="counter__bg" id="counter__bg">
   <div class="container m-auto counter__items text-center">
    <div class="learner text-light">
-     <i class="fas fa-user-friends"></i>
+    <i class="fas fa-user-friends"></i>
     <span class="counter">13</span>
     <p class="counter-text">Lorem Ipsum</p>
-    </div>
-    <div class="graduates text-light">
-     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+   </div>
+   <div class="graduates text-light">
+    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
     <span class="counter">2</span>
     <p class="counter-text">Lorem Ipsum</p>
-    </div>
-    <div class="course text-light">
-     <i class="fas fa-book-open    "></i>
+   </div>
+   <div class="course text-light">
+    <i class="fas fa-book-open    "></i>
     <span class="counter">1000</span>
     <p class="counter-text">Lorem Ipsum</p>
-    </div>
-    <div class="countries text-light">
-     <i class="fas fa-globe" aria-hidden="true"></i>
+   </div>
+   <div class="countries text-light">
+    <i class="fas fa-globe" aria-hidden="true"></i>
     <span class="counter">195</span>
     <p class="counter-text">Lorem Ipsum</p>
-    </div>
+   </div>
   </div>
  </section>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+
+ <!-- TESTIMONIAL SECTION -->
+ <section class="stories">
+    <div class="slider review padding-one">
+      <div class="review__stories">
+       <figure class="stories__shape">
+        <img src="https://res.cloudinary.com/osdev/image/upload/v1570362578/befitassets/img/customer1_utnvds.png" alt="" class="rounded-circle">
+       </figure>
+       <div class="stories__text">
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim rem commodi iste praesentium incidunt
+         consectetur suscipit laboriosam quo omnis.
+         <span class="stories__name text-center">Timothy Keller</span>
+        </p>
+       </div>
+      </div>
+      <div class="review__stories">
+       <figure class="stories__shape">
+        <img src="https://res.cloudinary.com/osdev/image/upload/v1570362584/befitassets/img/customer2_jkw9bn.png" alt="" class="rounded-circle">
+       </figure>
+       <div class="stories__text opacify">
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim rem commodi iste praesentium incidunt
+         consectetur suscipit laboriosam quo omnis.
+         <span class="stories__name text-center margin-top-md">Mary Jane</span>
+        </p>
+       </div>
+      </div>
+      <div class="review__stories">
+       <figure class="stories__shape">
+        <img src="https://res.cloudinary.com/osdev/image/upload/v1570362588/befitassets/img/customer3_vozygg.png" alt="" class="rounded-circle">
+       </figure>
+       <div class="stories__text opacify">
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim rem commodi iste praesentium incidunt
+         consectetur suscipit laboriosam quo omnis.
+         <span class="stories__name text-center margin-top-md">Peter Parker</span>
+        </p>
+       </div>
+      </div>
+   </div>
+
+ </section>
+ <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script> -->
  <script src="js/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<script src="jquery.counterup.min.js"></script>
+ <script src="jquery.counterup.min.js"></script>
+ <script src="js/slick.js"></script>
+ <script src="js/plugin.js"></script>
+ <script>
+  $(document).ready(function () {
+   $('.slider').slick({
 
-<script src="js/plugin.js"></script>
+    infinite: true,
+    slideToShow: 1,
+    slideToScroll: 1
 
-</script>
+   });
+  });
+ </script>
+ </script>
 </body>
 
 </html>
