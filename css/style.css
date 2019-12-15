@@ -237,6 +237,29 @@
   35% {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale3D(0, 0, 1); } }
+.counter {
+  font-size: 2.8rem;
+  font-weight: 700;
+  display: block; }
+  .counter-text {
+    font-size: 1.1rem;
+    font-weight: 600; }
+  .counter__bg {
+    background-color: #004fef;
+    padding: 1rem;
+    padding-top: 2.2rem;
+    opacity: .8; }
+    .counter__bg i {
+      display: block;
+      font-size: 2rem; }
+  .counter__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 170px));
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 20px; }
+
 .hvr-left {
   display: inline-block;
   vertical-align: middle;
@@ -316,6 +339,14 @@
       font-size: 2rem; }
     .hero .card {
       width: 90px; } }
+@media (min-width: 992px) and (max-width: 1048px) {
+  .counter__items {
+    width: 90%;
+    gap: 10px; } }
+@media (max-width: 991px) {
+  .counter__items {
+    width: 50%;
+    gap: 20px; } }
 *,
 *::before,
 *::after {

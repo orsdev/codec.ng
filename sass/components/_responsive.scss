@@ -119,3 +119,23 @@
 }
 
 }
+
+@media (min-width: 992px) and (max-width: 1048px) {
+ .counter {
+
+  &__items {
+ width: 90%;
+ gap: 10px;
+  }
+ }
+
+}
+
+@media (max-width: 991px) {
+ .counter {
+  &__items {
+ width: 50%;
+ gap: 20px;
+  }
+ }
+}
