@@ -331,7 +331,9 @@
     margin: 0;
     padding: 0;
     padding-bottom: 20px;
-    width: 100px; }
+    width: 130px; }
+    .footer__links i {
+      opacity: .6; }
     .footer__links li {
       margin: 0;
       padding: 0; }
