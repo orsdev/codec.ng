@@ -7,14 +7,7 @@
  @import "components/testimonial";
  @import "components/learnmore";
  @import "components/footer";
-// @import "components/navigation";
-// @import "components/button";
  @import "components/animations";
-// @import "components/class";
-// @import "components/features";
-// @import "components/stories";
-// @import "components/newsletter";
-// @import "components/footer";
 @import "components/responsive";
 
 
@@ -27,13 +20,18 @@
 }
 
 html {
-  // font-size: 62.5%; //10px => 10 / 16 = .625 ~ 62.5
   scroll-behavior: smooth;
+  //remove horizontal scroll from body
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  //remove horizontal scroll from body
+  max-width: 100%;
   overflow-x: hidden;
+
+  font-family: 'Roboto', sans-serif;
   position: relative;
 }

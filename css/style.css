@@ -485,12 +485,15 @@
   box-sizing: inherit; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 body {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  max-width: 100%;
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
   position: relative; }
 
 /*# sourceMappingURL=style.css.map */
