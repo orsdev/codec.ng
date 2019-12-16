@@ -45,13 +45,13 @@ $(closeButton).click(()=>{
  let left = parseInt($(sidebar).css("left"));
  let width = parseInt($(header).css("width"));
 
- (left < 0) ? $(sidebar).css("left",0): $(sidebar).css("left","-700px");
+ (left < 0) ? $(sidebar).css("left",0): $(sidebar).css("left","-750px");
 
  if(width <=100){
    $(header).css({"width":"100%", "left":"0"});
 
  }else{
-   $(header).css({"width":"100px", "left":"700px"});
+   $(header).css({"width":"100px", "left":"750px"});
  } 
 
  (width <= 100 ) ? $(closeIcon).removeClass("fa-plus").addClass("fa-times") : $(closeIcon).removeClass("fa-times").addClass("fa-plus");
