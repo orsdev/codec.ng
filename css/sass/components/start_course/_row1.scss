@@ -1,0 +1,53 @@
+.row1 {
+  padding: 0 10px;
+  h3 {
+    background-color: $gb_color;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+  }
+  article {
+    background-color: rgb(226, 224, 224);
+    display: block;
+    padding: 0 0 30px 0;
+
+    aside {
+      display: flex;
+      justify-content: center;
+      padding: 20px 10px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+      div {
+        height: 30px;
+        width: 80%;
+        border-radius: 20px;
+        background-color: $gb_color;
+      }
+    }
+    p {
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 30px auto;
+      background-color: $brand_color;
+      padding: 10px 30px;
+      border: none;
+      color: white;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+
+    p.ads {
+      text-align: left;
+      padding: 5px 20px;
+      font-size: 14px;
+      border-top: 1px solid gray;
+    }
+  }
+}
