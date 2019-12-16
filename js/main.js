@@ -34,24 +34,29 @@ $(document).ready(function () {
     })
   }
 
-  // Courses Effect
-  let browserWidth = document.documentElement.clientWidth;
-  console.log(browserWidth)
-  let course_container = $(".course_container");
-  let course_item = $(".hover");
+//sidebar 
+let closeButton = $(".close");
+let sidebar = $(".sidebar");
+let header = $(".sidebar header");
+let closeIcon = $(".fa-plus");
+let sidebarTitle = $(".sidebar header h5");
+$(closeButton).click(()=>{
 
-  for (let i = 0; i < course_container.length; i++) {
-    if (browserWidth <= 560) {
+ let left = parseInt($(sidebar).css("left"));
+ let width = parseInt($(header).css("width"));
 
-    } else {
+ (left < 0) ? $(sidebar).css("left",0): $(sidebar).css("left","-700px");
 
+ if(width <=100){
+   $(header).css({"width":"100%", "left":"0"});
 
-      $(course_container[i]).mouseenter(() => {
-        $(course_item[i]).fadeIn(500)
-      }).mouseleave(() => {
-        $(course_item[i]).fadeOut()
-      })
-    }
-  }
+ }else{
+   $(header).css({"width":"100px", "left":"700px"});
+ } 
+
+ (width <= 100 ) ? $(closeIcon).removeClass("fa-plus").addClass("fa-times") : $(closeIcon).removeClass("fa-times").addClass("fa-plus");
+  $(sidebarTitle).slideToggle(700);
+
+})
   // ends here
 });

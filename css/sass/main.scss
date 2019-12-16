@@ -160,6 +160,7 @@ main {
   }
   .content {
     .sidebar {
+      position: relative;
       header {
         background-color: $gb_color;
         color: #1c232e;
@@ -172,7 +173,6 @@ main {
           padding: 15px 0;
           li {
             display: inline;
-
           }
           li.desktop {
             display: none;
@@ -181,10 +181,17 @@ main {
         span {
           position: absolute;
           right: 30px;
+          top: 20px;
           i {
             color: $brand_color;
           }
         }
+        span.close {
+          display: none;
+        }
+      }
+      .content {
+        display: none;
       }
     }
     .main_content {
@@ -367,17 +374,17 @@ main {
                   a {
                     color: #6d961d;
                     margin-right: 15px;
-                    i{
+                    i {
                       margin-right: 5px;
                     }
                   }
-                  a:last-child{
+                  a:last-child {
                     color: gray;
                   }
                 }
-                p:last-child{
+                p:last-child {
                   justify-content: left;
-                  padding:0 20px;
+                  padding: 0 20px;
                   font-size: 20px;
                 }
               }
@@ -494,9 +501,91 @@ main {
     }
     .content {
       .sidebar {
-        header{
-          h5{
-            
+        position: absolute;
+        left: -700px;
+        transition: left 1s ease-in-out;
+        width: 70%;
+        z-index: 99;
+
+        header {
+          min-height: 70px;
+          width: 100px;
+          transition: width 1s ease-in-out, left 0s;
+          position: absolute;
+          left: 700px;
+          justify-content: left;
+          h5 {
+            display: none;
+            margin-left: 40px;
+            li.mobile {
+              display: none;
+            }
+            li.desktop {
+              display: inline;
+            }
+          }
+          span {
+            left: 20px;
+          }
+          span.close {
+            display: block;
+            left: 80%;
+            cursor: pointer;
+          }
+        }
+        .content {
+          display: block;
+          margin-left: 0px;
+          ul {
+            margin-top: 80px;
+            background-color: $gb_color;
+            li {
+              margin-bottom: 5px;
+              list-style: none;
+              font-size: 23px;
+              background-color: white;
+              a {
+                color: gray;
+              }
+              span {
+                width: 70px;
+                height: 100%;
+                background-color: $gb_color;
+                display: inline-flex;
+                justify-content: center;
+                color: gray;
+              }
+              i {
+                width: 30px;
+                margin-left: 20px;
+              }
+              p {
+                display: inline-block;
+              }
+              span,i,p{
+                padding: 20px 0;
+              }
+            }
+            li:hover,
+            li.active {
+              background-color: $brand_color;
+              transition: background-color 0.5s ease-in-out;
+              a {
+                color: white;
+              }
+            }
+            aside {
+              padding: 30px 0;
+              color: gray;
+              display: flex;
+              justify-content: space-around;
+              i {
+                cursor: pointer;
+              }
+              i:hover {
+                color: $brand_color;
+              }
+            }
           }
         }
       }
