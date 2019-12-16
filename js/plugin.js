@@ -14,6 +14,86 @@ $(document).ready(function() {
   });
 
 
+  //Dropdown Toggle
+  $(".toggle-1").click(function(){
+
+   //show and hide elements
+   $('.dropdown-1').toggle();
+   $('.dropdown-2').hide();
+   $('.dropdown-3').hide();
+
+   $(this).find('.fa-angle-down').toggle();
+   $(this).find('.fa-angle-up').toggle();
+
+   $('.toggle-2').find('.fa-angle-down').show();
+   $('.toggle-2').find('.fa-angle-up').hide();
+   $('.toggle-3').find('.fa-angle-down').show();
+   $('.toggle-3').find('.fa-angle-up').hide();
+ 
+  });
+
+   //Dropdown Toggle
+  $(".toggle-2").click(function(){
+   //show and hide elements
+   $('.dropdown-2').toggle();
+   $('.dropdown-1').hide();
+   $('.dropdown-3').hide();
+
+   $(this).find('.fa-angle-down').toggle();
+   $(this).find('.fa-angle-up').toggle();
+
+   $('.toggle-1').find('.fa-angle-down').show();
+   $('.toggle-1').find('.fa-angle-up').hide();
+   $('.toggle-3').find('.fa-angle-down').show();
+   $('.toggle-3').find('.fa-angle-up').hide();
+ 
+  })
+
+   //Dropdown Toggle
+  $(".toggle-3").click(function(){
+   //show and hide elements
+   $('.dropdown-3').toggle();
+   $('.dropdown-1').hide();
+   $('.dropdown-2').hide();
+
+   $(this).find('.fa-angle-down').toggle();
+   $(this).find('.fa-angle-up').toggle();
+
+   $('.toggle-1').find('.fa-angle-down').show();
+   $('.toggle-1').find('.fa-angle-up').hide();
+   $('.toggle-2').find('.fa-angle-down').show();
+   $('.toggle-2').find('.fa-angle-up').hide();
+ 
+  })
+
+
+   //open sidebar
+   $('.fa-bars').click(function () {
+  
+    //hide menu and show icon
+    $('.fa-bars').css('display', 'none');
+    $('.fa-times').css('display', 'block');
+  
+    $('.toggle').animate({
+     'left': '0'
+    }).css('visibility', 'visible');
+  
+   });
+  
+   //close sidebar
+   $('.fa-times').click(function () {
+  
+    //hide menu and show icon
+    $('.fa-bars').css('display', 'block');
+    $('.fa-times').css('display', 'none');
+  
+    $('.toggle').animate({
+     'left': '-250px'
+    });
+  
+   });
+  
+
   //Slick Slider
    $('.slider').slick({
    infinite: true,
@@ -24,52 +104,5 @@ $(document).ready(function() {
 
    //Counter Up
     $('.counter').counterUp();
+
 });
-
-//COUNTERUP PLUGIN
-// (function(e) {
-//   "use strict";
-//   e.fn.counterUp = function(t) {
-//     var n = e.extend({ time: 400, delay: 10 }, t);
-//     return this.each(function() {
-//       var t = e(this),
-//         r = n,
-//         i = function() {
-//           var e = [],
-//             n = r.time / r.delay,
-//             i = t.text(),
-//             s = /[0-9]+,[0-9]+/.test(i);
-//           i = i.replace(/,/g, "");
-//           var o = /^[0-9]+$/.test(i),
-//             u = /^[0-9]+\.[0-9]+$/.test(i),
-//             a = u ? (i.split(".")[1] || []).length : 0;
-//           for (var f = n; f >= 1; f--) {
-//             var l = parseInt((i / n) * f);
-//             u && (l = parseFloat((i / n) * f).toFixed(a));
-//             if (s)
-//               while (/(\d+)(\d{3})/.test(l.toString()))
-//                 l = l.toString().replace(/(\d+)(\d{3})/, "$1,$2");
-//             e.unshift(l);
-//           }
-//           t.data("counterup-nums", e);
-//           t.text("0");
-//           var c = function() {
-//             t.text(t.data("counterup-nums").shift());
-//             if (t.data("counterup-nums").length)
-//               setTimeout(t.data("counterup-func"), r.delay);
-//             else {
-//               delete t.data("counterup-nums");
-//               t.data("counterup-nums", null);
-//               t.data("counterup-func", null);
-//             }
-//           };
-//           t.data("counterup-func", c);
-//           setTimeout(t.data("counterup-func"), r.delay);
-//         };
-//       t.waypoint(i, { offset: "100%", triggerOnce: !0 });
-//     });
-//   };
-// })(jQuery);
-
-
-///call slider
