@@ -66,7 +66,6 @@ $(document).ready(function() {
  
   })
 
-
    //open sidebar
    $('.fa-bars').click(function () {
   
@@ -92,6 +91,13 @@ $(document).ready(function() {
     });
   
    });
+
+   //drop down search bar
+   $('.mobile .fa-search').click(function(){
+    $('.search-container').toggle(function(){
+     $('.search-container').animate();
+    });
+   })
   
 
   //Slick Slider

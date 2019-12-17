@@ -65,21 +65,57 @@
  .footer__go-up {
   bottom: 120px;
  }
+
+ .hero {
+  &__courses {
+   position: static;
+   margin: 0 auto;
+   max-width: 100%;
+   gap: 8px;
+  }
+
+  &__courses-item{
+   margin: 0 !important;
+   margin-right: 6px !important;
+   margin-left: 6px !important;
+  }
+
+ }
+}
+
+@media (min-width: 620px) and (max-width: 1175px) {
+ .courses {
+  .row {
+   grid-template-columns: 250px 250px;
+  }
+ }
+}
+
+@media (min-width: 495px) and (max-width: 619px) {
+ .courses {
+  .row {
+   grid-template-columns: 1fr 1fr;
+  }
+ }
+}
+
+@media (max-width: 494px) {
+ .courses {
+  .row {
+   grid-template-columns: 250px;
+  }
+ }
 }
 
 @media (min-width: 400px) and (max-width: 850px) {
+ .footer {
   .container {
     grid-template-columns: 30% 30% !important;
     gap: 30px !important;
   }
+ }
 }
 
-@media (max-width: 400px) {
-  .container {
-    width: 99%;
-    grid-template-columns: 1fr !important;
-  }
-}
 
 @media (min-width: 992px) and (max-width: 1048px) {
   .counter {
@@ -106,6 +142,7 @@
     }
   }
 }
+
 @media (min-width: 681px) and (max-width: 680px) {
   .counter {
     &__items {
@@ -124,6 +161,7 @@
 @media (max-width: 699px) {
   .review {
     width: 100%;
+
     &__stories {
       flex-direction: column;
     }
@@ -134,13 +172,24 @@
       display: inline-block;
     }
 
+    .stories__text {
+     width: 99%;
+     padding: .9rem;
+     margin: 0 auto;
+    }
+
     img {
       display: inline-block;
     }
   }
+
+  .rounded-circle {
+   width: 180px;
+   height: 180px;
+  }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 710px) {
   .group-1,
   .group-2 {
     display: none !important;
