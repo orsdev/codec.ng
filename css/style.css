@@ -334,11 +334,15 @@
 .hero__bg {
   background: -webkit-gradient(linear, left top, right top, color-stop(0, #232021), to(#004fef));
   background: linear-gradient(90deg, #232021 0, #004fef);
-  padding: 70px 1rem;
+  padding: 50px 1rem;
 }
 
 .hero__header {
   font-size: 3.5rem;
+}
+
+.hero-text {
+  font-size: 1.1rem;
 }
 
 .hero__green {
@@ -347,6 +351,7 @@
 
 .hero .signup__btn {
   font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .hero__courses {
@@ -358,17 +363,17 @@
 }
 
 .hero__courses-item {
-  border-radius: 10px;
+  border-radius: 6px;
   background: white;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   cursor: pointer;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 .hero__courses-item:hover {
@@ -377,36 +382,57 @@
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
-  border-radius: 0 0 5px 5px;
-  border-top: 2px solid green;
 }
 
-.hero__courses-item:nth-child(2):hover {
-  border-top: 2px solid red;
-}
-
-.hero__courses-item:nth-child(3):hover {
-  border-top: 2px solid black;
-}
-
-.hero__courses .card {
+.hero__courses-item .card {
   height: 100px;
-  width: 110px;
+  width: 100px;
 }
 
-.hero__courses .card-body {
+.hero__courses-item .card-body {
   padding: 0;
   padding-top: 20px;
 }
 
-.hero__courses i {
+.hero__courses-item i {
   display: inline-block;
   font-size: 2.5rem;
 }
 
-.hero-text {
-  font-weight: 700;
-  font-size: 0.9rem;
+.tech:hover {
+  border-top: 3px solid #004fef;
+}
+
+.lang:hover {
+  border-top: 3px solid green;
+}
+
+.sci:hover {
+  border-top: 3px solid purple;
+}
+
+.health:hover {
+  border-top: 3px solid red;
+}
+
+.bus:hover {
+  border-top: 3px solid orange;
+}
+
+.math:hover {
+  border-top: 3px solid purple;
+}
+
+.human:hover {
+  border-top: 3px solid greenyellow;
+}
+
+.market:hover {
+  border-top: 3px solid pink;
+}
+
+.life:hover {
+  border-top: 3px solid #c81a7f;
 }
 
 .courses__bg {
