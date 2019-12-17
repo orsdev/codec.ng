@@ -29,7 +29,6 @@ img {
 }
 
 .sidebar header {
-  display: none;
   background-color: #E9EDF1;
   color: #1c232e;
   display: -webkit-box;
@@ -44,30 +43,29 @@ img {
   padding: 10px;
 }
 
-.sidebar header li.desktop_side {
-  display: none;
+.sidebar header p {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.sidebar header p i {
+  font-size: 35px;
 }
 
 .sidebar header h5 {
-  font-size: 18px;
-  padding: 15px 0;
+  color: black;
+  padding: 10px 0;
 }
 
-.sidebar header h5 li {
-  display: inline;
+.sidebar header .desktop_side {
+  display: none;
 }
 
-.sidebar header span {
+.sidebar header .close {
   position: absolute;
-  right: 30px;
-  top: 20px;
-}
-
-.sidebar header span i {
-  color: #004fef;
-}
-
-.sidebar header span.close {
+  top: 10px;
+  right: 20px;
   display: none;
 }
 
@@ -76,17 +74,20 @@ img {
 }
 
 @media screen and (min-width: 560px) {
-  .sidebar {
+  main {
+    position: relative;
+  }
+  main .sidebar {
     position: absolute;
+    top: -20px;
     left: 0px;
     -webkit-transition: left 1s ease-in-out;
     transition: left 1s ease-in-out;
-    width: 70%;
-    z-index: 99;
+    z-index: 1;
   }
-  .sidebar header {
+  main .sidebar header {
     min-height: 60px;
-    width: 100px;
+    width: 150px;
     -webkit-transition: width 0.5s ease-in;
     transition: width 0.5s ease-in;
     -webkit-box-pack: left;
@@ -94,53 +95,53 @@ img {
             justify-content: left;
     position: relative;
   }
-  .sidebar header li.desktop_side {
-    margin-left: 60px;
-    list-style: none;
-    display: none;
-  }
-  .sidebar header h5 {
-    display: none;
-    margin-left: 40px;
-  }
-  .sidebar header h5 li.mobile {
-    display: none;
-  }
-  .sidebar header span {
+  main .sidebar header p {
     left: 20px;
   }
-  .sidebar header span.close {
-    display: block;
-    left: 85%;
-    cursor: pointer;
+  main .sidebar header h5 {
+    display: none;
   }
-  .sidebar .content {
+  main .sidebar header li.desktop_side {
+    display: none;
+    list-style: none;
+    padding: 0 10px 0 60px;
+  }
+  main .sidebar header li.desktop_side h3 {
+    font-size: 20px;
+  }
+  main .sidebar header .close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  main .sidebar .content {
     display: block;
     margin-left: 0px;
   }
-  .sidebar .content ul {
+  main .sidebar .content ul {
     background-color: #E9EDF1;
     overflow-x: hidden;
-    width: 70px;
+    width: 400px;
     -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
   }
-  .sidebar .content ul li {
+  main .sidebar .content ul li {
     margin-bottom: 5px;
     list-style: none;
-    font-size: 23px;
-    overflow-x: hidden;
+    font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 60px;
   }
-  .sidebar .content ul li span {
-    width: 70px;
+  main .sidebar .content ul li span {
+    width: 60px;
     height: 100%;
-    padding: 20px 10px;
+    padding: 18px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -151,56 +152,67 @@ img {
     cursor: pointer;
     background-color: #E9EDF1;
   }
-  .sidebar .content ul li span:hover {
-    background-color: #004fef;
-  }
-  .sidebar .content ul li a {
-    display: none;
+  main .sidebar .content ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     color: gray;
     width: 100%;
+    height: 100%;
     background: -webkit-gradient(linear, right top, left top, color-stop(50%, white), color-stop(50%, #004fef));
     background: linear-gradient(to left, white 50%, #004fef 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
-    padding: 20px 0;
+    text-decoration: none;
   }
-  .sidebar .content ul li a i {
+  main .sidebar .content ul li a i {
     width: 30px;
     margin-left: 20px;
+    display: block;
   }
-  .sidebar .content ul li a p {
-    display: inline-block;
+  main .sidebar .content ul li a p {
+    text-align: right;
+    margin-top: 15px;
+    padding-right: 20px;
+    width: 100%;
   }
-  .sidebar .content ul li a:hover {
-    background-position: left bottom;
+  main .sidebar .content ul li a:hover {
+    background-position: left top;
     color: white;
+    opacity: 1;
   }
-  .sidebar .content ul li.active span,
-  .sidebar .content ul li:hover span {
+  main .sidebar .content ul li:hover span, main .sidebar .content ul li.active span {
     background-color: #004fef;
     color: white;
   }
-  .sidebar .content ul aside {
-    padding: 30px 0;
-    color: gray;
+  main .sidebar .content aside {
+    height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 30px;
   }
-  .sidebar .content ul aside i {
+  main .sidebar .content aside i {
     cursor: pointer;
-  }
-  .sidebar .content ul aside i:hover {
-    color: #004fef;
   }
 }
 
 .row1 {
   padding: 0 10px;
+  margin-top: 20px;
 }
 
 .row1 h3 {
@@ -208,10 +220,10 @@ img {
   text-align: center;
   padding: 15px 20px;
   border-radius: 5px 5px 0 0;
-  border: 1px solid gray;
+  border: 1px solid #e0dddd;
   border-bottom: none;
-  -webkit-box-shadow: 1px 1px 10px gray;
-          box-shadow: 1px 1px 10px gray;
+  -webkit-box-shadow: 1px 1px 5px gray;
+          box-shadow: 1px 1px 5px gray;
 }
 
 .row1 article {
@@ -263,6 +275,12 @@ img {
   padding: 5px 20px;
   font-size: 14px;
   border-top: 1px solid gray;
+}
+
+@media screen and (min-width: 560px) {
+  .row1 {
+    padding: 20px 30px 20px 100px;
+  }
 }
 
 .row2 {
@@ -447,6 +465,9 @@ img {
 }
 
 @media screen and (min-width: 560px) {
+  .main_content .row2 {
+    padding: 20px 30px 20px 100px;
+  }
   .main_content .row2 .follow aside.one {
     padding-left: 20px;
   }
@@ -509,16 +530,6 @@ img {
 }
 
 @media screen and (min-width: 1100px) {
-  main .content .sidebar {
-    position: absolute;
-    left: 0;
-    width: 60%;
-    display: inline-block;
-  }
-  main .content .sidebar header {
-    left: 0;
-    top: 0px;
-  }
   main .content .main_content .row1, main .content .main_content .row2 {
     z-index: 99;
     padding: 20px 150px;

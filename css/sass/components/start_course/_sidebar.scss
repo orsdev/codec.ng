@@ -1,146 +1,151 @@
 .sidebar {
   position: relative;
   header {
-    display: none;
     background-color: $gb_color;
     color: #1c232e;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    li.desktop_side {
-      display: none;
+    p {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      i {
+        font-size: 35px;
+      }
     }
     h5 {
-      font-size: 18px;
-      padding: 15px 0;
-      li {
-        display: inline;
-      }
+      color: black;
+      padding: 10px 0;
     }
-    span {
+    .desktop_side {
+      display: none;
+    }
+    .close {
       position: absolute;
-      right: 30px;
-      top: 20px;
-      i {
-        color: $brand_color;
-      }
-    }
-    span.close {
+      top: 10px;
+      right: 20px;
       display: none;
     }
   }
+
   .content {
     display: none;
   }
 }
 @media screen and (min-width: 560px) {
-  .sidebar {
-    position: absolute;
-    left: 0px;
-    transition: left 1s ease-in-out;
-    width: 70%;
-    z-index: 99;
+  main {
+    position: relative;
+    .sidebar {
+      position: absolute;
+      top: -20px;
+      left: 0px;
+      transition: left 1s ease-in-out;
+      z-index: 1;
 
-    header {
-      min-height: 60px;
-      width: 100px;
-      transition: width 0.5s ease-in;
-      justify-content: left;
-      position: relative;
+      header {
+        min-height: 60px;
+        width: 150px;
+        transition: width 0.5s ease-in;
+        justify-content: left;
+        position: relative;
 
-      li.desktop_side {
-        margin-left: 60px;
-        list-style: none;
-        display: none;
-      }
-      h5 {
-        display: none;
-        margin-left: 40px;
-        li.mobile {
+        p {
+          left: 20px;
+        }
+        h5 {
           display: none;
         }
-      }
-      span {
-        left: 20px;
-      }
-      span.close {
-        display: block;
-        left: 85%;
-        cursor: pointer;
-      }
-    }
-    .content {
-      display: block;
-      margin-left: 0px;
-      ul {
-        background-color: $gb_color;
-        overflow-x: hidden;
-        width: 70px;
-        transition: width 0.5s ease-in-out;
-
-        li {
-          margin-bottom: 5px;
+        li.desktop_side {
+          display: none;
           list-style: none;
-          font-size: 23px;
+          padding: 0 10px 0 60px;
+          h3{
+            font-size: 20px;
+          }
+
+        }
+        .close {
+          display: block;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+      }
+      .content {
+        display: block;
+        margin-left: 0px;
+        ul {
+          background-color: $gb_color;
           overflow-x: hidden;
-          display: flex;
-          align-items: center;
+          width: 400px;
+          transition: width 0.5s ease-in-out;
 
-          span {
-            width: 70px;
-            height: 100%;
-            padding: 20px 10px;
-            display: inline-flex;
-            justify-content: center;
-            color: gray;
-            cursor: pointer;
-            background-color: $gb_color;
-          }
-          span:hover {
-            background-color: $brand_color;
-          }
-          a {
-            display: none;
-            color: gray;
-            width: 100%;
-            background: linear-gradient(to left, white 50%, $brand_color 50%);
-            background-size: 200% 100%;
-            background-position: right bottom;
-            transition: all 1s ease;
+          li {
+            margin-bottom: 5px;
+            list-style: none;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            height: 60px;
 
-            padding: 20px 0;
-            i {
-              width: 30px;
-              margin-left: 20px;
+            span {
+              width: 60px;
+              height: 100%;
+              padding: 18px;
+              display: inline-flex;
+              justify-content: center;
+              color: gray;
+              cursor: pointer;
+              background-color: $gb_color;
             }
-            p {
-              display: inline-block;
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: left;
+              color: gray;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(to left, white 50%, $brand_color 50%);
+              background-size: 200% 100%;
+              background-position: right bottom;
+              transition: all 1s ease;
+              text-decoration: none;
+              i {
+                width: 30px;
+                margin-left: 20px;
+                display: block;
+              }
+              p {
+                text-align: right;
+                margin-top: 15px;
+                padding-right: 20px;
+                width: 100%;
+              }
+            }
+            a:hover{
+              background-position:left top;
+              color: white;
+              opacity: 1;
             }
           }
-          a:hover {
-            background-position: left bottom;
-            color: white;
+          li:hover, li.active{
+            span{
+              background-color: $brand_color;
+              color: white;
+            }
           }
         }
-        li.active,
-        li:hover {
-          span {
-            background-color: $brand_color;
-            color: white;
-          }
-        }
-
-        aside {
-          padding: 30px 0;
-          color: gray;
+        aside{
+          height: 50px;
           display: flex;
           justify-content: space-around;
-          i {
+          align-items: center;
+          font-size: 30px;
+
+          i{
             cursor: pointer;
-          }
-          i:hover {
-            color: $brand_color;
           }
         }
       }
