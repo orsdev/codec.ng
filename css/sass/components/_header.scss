@@ -236,29 +236,42 @@
 
 //SIDEBAR
 .toggle {
-  background-color: #e9edf1;
+  background-color:white;
   position: absolute;
   top: 0;
-  width: 200px;
+  width: 350px;
   height: 100vh;
   min-height: 100vh;
-  visibility: hidden;
-  left: -200px;
+  visibility: visible;
+  left: -400px;
   z-index: 9;
 
   &__nav {
     list-style: none;
     padding-top: 140px;
 
+
     &-item {
       display: inline-block;
       width: 100%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      font-size: 1.2rem;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+
+      a{
+        i{
+          margin-right: 20px;
+        }
+      }
 
       &:hover {
-        background: $black;
+        background: $topnav-bg;
+        color: white;
+        padding-left: 40px;
+        transition: padding .5s;
+
+        a{
+          color: white;
+        }
       }
 
     }
