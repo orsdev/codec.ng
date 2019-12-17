@@ -113,6 +113,14 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .logged_in-container .logged_in {
+    -ms-flex-item-align: right !important;
+        -ms-grid-row-align: right !important;
+        align-self: right !important;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
   .logged_in-container .logged_in .cart,
   .logged_in-container .logged_in .ribbon {
     display: -webkit-inline-box;

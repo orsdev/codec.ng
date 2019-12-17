@@ -15,8 +15,8 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      i{
-          font-size: 20px;
+      i {
+        font-size: 20px;
       }
 
       .badge {
@@ -53,28 +53,28 @@
   }
 }
 .mobile-login {
-    span{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: grey;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        .badge {
-            position: absolute;
-            top: -5px;
-            right: -15px;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: darkblue;
-          }
+  span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .badge {
+      position: absolute;
+      top: -5px;
+      right: -15px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: darkblue;
     }
+  }
   img {
     width: 40px;
     height: 40px;
@@ -87,6 +87,10 @@
 @media screen and (min-width: 1280px) {
   .logged_in-container {
     .logged_in {
+      align-self: right !important  ;
+      position: absolute;
+      right: 20px;
+      top: 15px;
       .cart,
       .ribbon {
         display: inline-flex;

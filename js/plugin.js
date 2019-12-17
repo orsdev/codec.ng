@@ -92,7 +92,6 @@ $(document).ready(function() {
     });
   
    });
-  
 
   //Slick Slider
    $('.slider').slick({
