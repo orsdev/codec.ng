@@ -88,7 +88,7 @@ $(document).ready(function() {
     $('.fa-times').css('display', 'none');
   
     $('.toggle').animate({
-     'left': '-250px'
+     'left': '-450px'
     });
   
    });

@@ -29,6 +29,7 @@ img {
 }
 
 .sidebar header {
+  display: none;
   background-color: #E9EDF1;
   color: #1c232e;
   display: -webkit-box;

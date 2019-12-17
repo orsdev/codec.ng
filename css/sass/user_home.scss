@@ -1,5 +1,3 @@
-@import "./components/variables";
-
 .logged_in-container {
   text-align: right;
   .logged_in {
@@ -31,7 +29,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $deepblue;
+        background-color: darkblue;
       }
     }
     .cart,
@@ -74,7 +72,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: $deepblue;
+            background-color: darkblue;
           }
     }
   img {

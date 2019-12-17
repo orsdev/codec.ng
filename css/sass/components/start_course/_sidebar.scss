@@ -1,6 +1,7 @@
 .sidebar {
   position: relative;
   header {
+    display: none;
     background-color: $gb_color;
     color: #1c232e;
     display: flex;
@@ -96,8 +97,8 @@
             cursor: pointer;
             background-color: $gb_color;
           }
-          span:hover{
-              background-color: $brand_color;
+          span:hover {
+            background-color: $brand_color;
           }
           a {
             display: none;
