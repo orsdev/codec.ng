@@ -3,22 +3,24 @@
 @import "components/start_course/row1";
 @import "components/start_course/row2";
 
-
-@media screen and (min-width: 1100px) {
-  main {
-    .content {
-
-      .main_content{
-        .row1, .row2{
-          z-index: 99;
-          padding: 20px 150px;
-        }
-        .row2 {
-          margin-top: 100px !important;
-        }
+main {
+    .main_content {
+      .advert{
+        border: 1px solid gray;
+        height: 300px;
+        min-width: 300px;
+        max-width: 1000px;
+        margin: 30px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
+
     }
   }
+@media screen and (min-width: 1100px) {
+
+  
 }
 
 

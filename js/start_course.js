@@ -21,7 +21,7 @@ $(document).ready(function () {
       return init1 = false;
     }
     else {
-      (sidebar_ul).css("width", "60px");
+      (sidebar_ul).css("width", "50px");
       menuList.css("display", "none");
       desktop_side.toggle();
       $(header).css("width", "150px");
@@ -33,19 +33,19 @@ $(document).ready(function () {
   })
 
   // menuList hover effect
-  for (let i = 0; i < sidebarBullet.length; i++) {
-    $(sidebarBullet[i]).mouseenter(() => {
-        (sidebar_ul).css("width", "400px");
-        $(menuList[i]).css("display", "flex")
+  // for (let i = 0; i < sidebarBullet.length; i++) {
+  //   $(sidebarBullet[i]).mouseenter(() => {
+  //       (sidebar_ul).css("width", "400px");
+  //       $(menuList[i]).css("display", "flex")
 
-    })
-    $(sidebarBullet[i]).mouseleave(() => {
-        (sidebar_ul).css("width", "60px");
-        $(menuList).css("display", "none")
+  //   })
+  //   $(sidebarBullet[i]).mouseleave(() => {
+  //       (sidebar_ul).css("width", "60px");
+  //       $(menuList).css("display", "none")
 
-    })
+  //   })
 
-  }
+  // }
 
   //accordion
   let angleIcon = $(".fa-angle-down");

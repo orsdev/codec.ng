@@ -79,7 +79,7 @@ img {
   }
   main .sidebar {
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: 0px;
     -webkit-transition: left 1s ease-in-out;
     transition: left 1s ease-in-out;
@@ -87,13 +87,16 @@ img {
   }
   main .sidebar header {
     min-height: 60px;
-    width: 150px;
+    width: 100px;
     -webkit-transition: width 0.5s ease-in;
     transition: width 0.5s ease-in;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
   }
   main .sidebar header p {
     left: 20px;
@@ -119,14 +122,16 @@ img {
     display: block;
     margin-left: 0px;
   }
-  main .sidebar .content ul {
+  main .sidebar .content ul#container {
+    margin-top: 60px;
     background-color: #E9EDF1;
     overflow-x: hidden;
-    width: 50px;
+    min-width: 50px;
     -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
   }
-  main .sidebar .content ul li {
+  main .sidebar .content ul#container li {
+    cursor: pointer;
     margin-bottom: 5px;
     list-style: none;
     font-size: 20px;
@@ -136,65 +141,71 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 60px;
-  }
-  main .sidebar .content ul li span {
-    width: 60px;
-    height: 100%;
-    padding: 18px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: gray;
-    cursor: pointer;
-    background-color: #E9EDF1;
-  }
-  main .sidebar .content ul li a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    color: gray;
-    width: 100%;
-    height: 100%;
+    height: 50px;
+    border: 1px solid red;
     background: -webkit-gradient(linear, right top, left top, color-stop(50%, white), color-stop(50%, #004fef));
     background: linear-gradient(to left, white 50%, #004fef 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
-    text-decoration: none;
   }
-  main .sidebar .content ul li a i {
-    width: 30px;
-    margin-left: 20px;
-    display: block;
-  }
-  main .sidebar .content ul li a p {
-    text-align: right;
-    margin-top: 15px;
-    padding-right: 20px;
+  main .sidebar .content ul#container li p {
+    height: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
-  main .sidebar .content ul li a:hover {
-    background-position: left top;
-    color: white;
-    opacity: 1;
+  main .sidebar .content ul#container li p:first-child {
+    width: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #E9EDF1;
   }
-  main .sidebar .content ul li:hover span, main .sidebar .content ul li.active span {
+  main .sidebar .content ul#container li p:last-child {
+    padding-left: 20px;
+    display: none;
+  }
+  main .sidebar .content ul#container li p:last-child span {
+    margin-left: 20px;
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  main .sidebar .content ul#container li:hover {
     background-color: #004fef;
+    background-position: left bottom;
+    color: white;
+  }
+  main .sidebar .content ul#container li:hover p:first-child {
+    background-color: #004fef;
+  }
+  main .sidebar .content ul#container li:hover p:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .sidebar .content ul#container li:hover p:last-child span {
     color: white;
   }
   main .sidebar .content aside {
     height: 50px;
+    background-color: #1c232e;
+    color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -530,14 +541,21 @@ img {
   }
 }
 
-@media screen and (min-width: 1100px) {
-  main .content .main_content .row1, main .content .main_content .row2 {
-    z-index: 99;
-    padding: 20px 150px;
-  }
-  main .content .main_content .row2 {
-    margin-top: 100px !important;
-  }
+main .main_content .advert {
+  border: 1px solid gray;
+  height: 300px;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .show_sidebar {
