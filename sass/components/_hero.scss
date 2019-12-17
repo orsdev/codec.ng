@@ -5,11 +5,15 @@
 
  &__bg {
   background: linear-gradient(90deg,#232021 0,$deepblue);
-  padding: 70px 1rem;
+  padding: 50px 1rem;
  }
 
  &__header {
   font-size: 3.5rem;
+ }
+
+ &-text {
+ font-size: 1.1rem;
  }
 
  &__green {
@@ -18,6 +22,7 @@
 
  .signup__btn {
   font-weight: 700;
+  font-size: 1.1rem;
  }
 
  &__courses{
@@ -25,15 +30,14 @@
   justify-content: center;
 
   &-item {
-   border-radius: 10px;
+   border-radius: 6px;
    background: white;
-   -webkit-border-radius: 10px;
-   -moz-border-radius: 10px;
-   -ms-border-radius: 10px;
-   -o-border-radius: 10px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
    cursor: pointer;
    transition: transform .3s;
-
    &:hover{
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -44,7 +48,7 @@
 
    .card {
     height: 100px;
-    width: 110px;
+    width: 100px;
 
     &-body {
      padding: 0;
@@ -52,17 +56,50 @@
     }
    }
 
+
    i {
     display: inline-block;
     font-size: 2.5rem;
    }
 }
 
-&-text {
- font-weight: 700;
- font-size: .9rem;
-}
-
  }
  
+}
+
+//hover effects
+.tech:hover {
+ border-top: 3px solid $deepblue;
+}
+
+.lang:hover {
+ border-top: 3px solid green;
+}
+
+.sci:hover {
+ border-top: 3px solid purple;
+}
+
+.health:hover {
+ border-top: 3px solid red;
+}
+
+.bus:hover {
+ border-top: 3px solid orange;
+}
+
+.math:hover {
+ border-top: 3px solid purple;
+}
+
+.human:hover {
+ border-top: 3px solid greenyellow;
+}
+
+.market:hover {
+ border-top: 3px solid pink;
+}
+
+.life:hover {
+ border-top: 3px solid #c81a7f;
 }
