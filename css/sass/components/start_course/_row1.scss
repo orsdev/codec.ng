@@ -4,7 +4,10 @@
     background-color: $gb_color;
     text-align: center;
     padding: 15px 20px;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid gray;
+    border-bottom: none;
+    box-shadow: 1px 1px 10px gray;
   }
   article {
     background-color: rgb(226, 224, 224);

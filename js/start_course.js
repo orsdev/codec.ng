@@ -36,28 +36,51 @@ $(document).ready(function () {
 
   //sidebar 
   let closeButton = $(".close");
-  let sidebar = $(".sidebar");
-  let header = $(".sidebar header");
   let closeIcon = $(".fa-plus");
-  let sidebarTitle = $(".sidebar header h5");
+  let sidebar_ul = $("#container");
+  let sidebarBullet = $("#container li")
+  let menuList = $(".menuList");
+  let desktop_side = $(".desktop_side");
+  let header = $(".sidebar header")
+  let init1 = true;
+
+  //button collapse events
   $(closeButton).click(() => {
+    if (init1) {
+      (sidebar_ul).css("width", "70%");
+      menuList.css("display", "block");
+      $(closeIcon).addClass("fa-times").removeClass("fa-plus");
+      $(desktop_side).toggle();
+      $(header).css("width", "70%")
+      return init1 = false;
+    }
+    else {
+      (sidebar_ul).css("width", "70px");
+      menuList.css("display","none");
+      $(closeIcon).addClass("fa-plus").removeClass("fa-times");
+      desktop_side.toggle();
+      $(header).css("width", "100px")
 
-    let left = parseInt($(sidebar).css("left"));
-    let width = parseInt($(header).css("width"));
+      return init1 = true;
 
-    (left < 0) ? $(sidebar).css("left", 0) : $(sidebar).css("left", "-750px");
-
-    if (width <= 100) {
-      $(header).css({ "width": "100%", "left": "0" });
-
-    } else {
-      $(header).css({ "width": "100px", "left": "750px" });
     }
 
-    (width <= 100) ? $(closeIcon).removeClass("fa-plus").addClass("fa-times") : $(closeIcon).removeClass("fa-times").addClass("fa-plus");
-    $(sidebarTitle).slideToggle(700);
-
   })
+
+  //menuList hover effect
+  for (let i = 0; i < sidebarBullet.length; i++) {
+    $(sidebarBullet[i]).mouseenter(() => {
+        (sidebar_ul).css("width", "70%");
+        $(menuList[i]).css("display", "block")
+      
+    })
+    $(sidebarBullet[i]).mouseleave(() => {
+        (sidebar_ul).css("width", "70px");
+        $(menuList).css("display", "none")
+
+    })
+
+  }
 
   //accordion
   let angleIcon = $(".fa-angle-down");

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #E9EDF1;
+  background-color: #fafbfc;
   overflow-x: hidden;
 }
 
@@ -43,6 +43,10 @@ img {
   padding: 10px;
 }
 
+.sidebar header li.desktop_side {
+  display: none;
+}
+
 .sidebar header h5 {
   font-size: 18px;
   padding: 15px 0;
@@ -50,10 +54,6 @@ img {
 
 .sidebar header h5 li {
   display: inline;
-}
-
-.sidebar header h5 li.desktop_side {
-  display: none;
 }
 
 .sidebar header span {
@@ -77,22 +77,26 @@ img {
 @media screen and (min-width: 560px) {
   .sidebar {
     position: absolute;
-    left: -750px;
+    left: 0px;
     -webkit-transition: left 1s ease-in-out;
     transition: left 1s ease-in-out;
     width: 70%;
     z-index: 99;
   }
   .sidebar header {
-    min-height: 70px;
+    min-height: 60px;
     width: 100px;
     -webkit-transition: width 0.5s ease-in;
     transition: width 0.5s ease-in;
-    position: absolute;
-    left: 750px;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
+    position: relative;
+  }
+  .sidebar header li.desktop_side {
+    margin-left: 60px;
+    list-style: none;
+    display: none;
   }
   .sidebar header h5 {
     display: none;
@@ -101,15 +105,12 @@ img {
   .sidebar header h5 li.mobile {
     display: none;
   }
-  .sidebar header h5 li.desktop_side {
-    display: inline;
-  }
   .sidebar header span {
     left: 20px;
   }
   .sidebar header span.close {
     display: block;
-    left: 80%;
+    left: 85%;
     cursor: pointer;
   }
   .sidebar .content {
@@ -117,22 +118,28 @@ img {
     margin-left: 0px;
   }
   .sidebar .content ul {
-    margin-top: 80px;
     background-color: #E9EDF1;
+    overflow-x: hidden;
+    width: 70px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
   }
   .sidebar .content ul li {
     margin-bottom: 5px;
     list-style: none;
     font-size: 23px;
-    background-color: white;
-  }
-  .sidebar .content ul li a {
-    color: gray;
+    overflow-x: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .sidebar .content ul li span {
     width: 70px;
     height: 100%;
-    background-color: #E9EDF1;
+    padding: 20px 10px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -140,27 +147,38 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     color: gray;
+    cursor: pointer;
+    background-color: #E9EDF1;
   }
-  .sidebar .content ul li i {
+  .sidebar .content ul li span:hover {
+    background-color: #004fef;
+  }
+  .sidebar .content ul li a {
+    display: none;
+    color: gray;
+    width: 100%;
+    background: -webkit-gradient(linear, right top, left top, color-stop(50%, white), color-stop(50%, #004fef));
+    background: linear-gradient(to left, white 50%, #004fef 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    padding: 20px 0;
+  }
+  .sidebar .content ul li a i {
     width: 30px;
     margin-left: 20px;
   }
-  .sidebar .content ul li p {
+  .sidebar .content ul li a p {
     display: inline-block;
   }
-  .sidebar .content ul li span,
-  .sidebar .content ul li i,
-  .sidebar .content ul li p {
-    padding: 20px 0;
+  .sidebar .content ul li a:hover {
+    background-position: left bottom;
+    color: white;
   }
-  .sidebar .content ul li:hover,
-  .sidebar .content ul li.active {
+  .sidebar .content ul li.active span,
+  .sidebar .content ul li:hover span {
     background-color: #004fef;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out;
-  }
-  .sidebar .content ul li:hover a,
-  .sidebar .content ul li.active a {
     color: white;
   }
   .sidebar .content ul aside {
@@ -188,7 +206,11 @@ img {
   background-color: #E9EDF1;
   text-align: center;
   padding: 15px 20px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid gray;
+  border-bottom: none;
+  -webkit-box-shadow: 1px 1px 10px gray;
+          box-shadow: 1px 1px 10px gray;
 }
 
 .row1 article {
@@ -486,23 +508,22 @@ img {
 }
 
 @media screen and (min-width: 1100px) {
-  main .content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 3fr 9fr;
-        grid-template-columns: 3fr 9fr;
-  }
   main .content .sidebar {
-    position: relative;
+    position: absolute;
     left: 0;
-    width: 100%;
+    width: 60%;
+    display: inline-block;
   }
   main .content .sidebar header {
     left: 0;
     top: 0px;
   }
-  main .content .sidebar header .close {
-    display: none !important;
+  main .content .main_content .row1, main .content .main_content .row2 {
+    z-index: 99;
+    padding: 20px 150px;
+  }
+  main .content .main_content .row2 {
+    margin-top: 100px !important;
   }
 }
 

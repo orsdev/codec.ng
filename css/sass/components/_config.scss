@@ -1,5 +1,6 @@
 $brand_color: #004fef;
 $bg_color: hsl(0, 0%, 100%);
+$body_color:rgb(250, 251, 252); 
 $gb_color: #E9EDF1;
 $txt: black;
 
@@ -10,7 +11,7 @@ $txt: black;
     box-sizing: border-box;
 }
 body {
-    background-color: $gb_color ;
+    background-color: $body_color ;
     overflow-x: hidden;
 }
 
