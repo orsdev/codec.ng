@@ -87,10 +87,11 @@ $(document).ready(function() {
     $('.fa-times').css('display', 'none');
   
     $('.toggle').animate({
-     'left': '-250px'
+     'left': '-450px'
     });
   
    });
+<<<<<<< HEAD
 
    //drop down search bar
    $('.mobile .fa-search').click(function(){
@@ -105,6 +106,8 @@ $(document).ready(function() {
      $('.language__globe').toggle();
    })
   
+=======
+>>>>>>> 5d9e072114f4aef1e0b43f263a5b52843ba6c957
 
   //Slick Slider
    $('.slider').slick({
