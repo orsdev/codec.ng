@@ -100,7 +100,7 @@ $(document).ready(function() {
    })
 
    //toggle language selection
-   $('.language').click(function(){
+   $('.auth .language').click(function(){
     //show and hide element
      $('.language__globe').toggle();
    })
