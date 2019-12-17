@@ -98,6 +98,12 @@ $(document).ready(function() {
      $('.search-container').animate();
     });
    })
+
+   //toggle language selection
+   $('.language').click(function(){
+    //show and hide element
+     $('.language__globe').toggle();
+   })
   
 
   //Slick Slider

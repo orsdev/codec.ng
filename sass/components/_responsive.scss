@@ -19,6 +19,10 @@
       width: 92% !important;
     }
   }
+
+  .language__globe {
+   top: 118px !important;
+  }
 }
 
 @media (max-width: 594px) {
@@ -218,6 +222,10 @@
     display: none !important;
   }
 
+  .language__globe {
+   display: none;
+  }
+
   .topnav__bg {
     display: block;
     position: relative;
@@ -226,4 +234,11 @@
       display: block;
     }
   }
+}
+
+
+@media (min-width: 711px) {
+ .language__globe {
+  position: absolute;
+  top: 73px;}
 }
