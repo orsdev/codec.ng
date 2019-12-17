@@ -16,7 +16,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: inherit; 
 }
 
 html {
@@ -24,6 +24,7 @@ html {
   //remove horizontal scroll from body
   max-width: 100%;
   overflow-x: hidden;
+  
 }
 
 body {
@@ -31,7 +32,10 @@ body {
   //remove horizontal scroll from body
   max-width: 100%;
   overflow-x: hidden;
-
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   position: relative;
+}
+
+p {
+ font-size: 1.1rem;
 }
