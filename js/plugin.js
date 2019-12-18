@@ -116,5 +116,10 @@ $(document).ready(function() {
 
    //Counter Up
     $('.counter').counterUp();
-
+   
+    //User dropdown menu
+   $("#user_image").click(()=>{
+     $(".user_menu").slideToggle(500);
+     $("#user .fa-caret-up").slideToggle(200);
+   })
 });

@@ -131,17 +131,9 @@ img {
     -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
   }
-  main .sidebar .content ul#container .placeholder {
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 50px;
-    background-color: #E9EDF1;
-  }
   main .sidebar .content ul#container li {
     position: relative;
     cursor: pointer;
-    margin-bottom: 5px;
     list-style: none;
     font-size: 20px;
     display: -webkit-box;
@@ -182,7 +174,7 @@ img {
     display: none;
   }
   main .sidebar .content ul#container li p:last-child span {
-    margin-left: 20px;
+    margin-left: 40px;
     padding-right: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -190,9 +182,9 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     width: 100%;
   }
   main .sidebar .content ul#container li:hover {
@@ -648,6 +640,11 @@ main .main_content .advert {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main .main_content .advert iframe {
+  width: 400px;
+  height: 300px;
 }
 
 @media screen and (min-width: 992px) {
