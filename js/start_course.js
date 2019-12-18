@@ -14,18 +14,20 @@ $(document).ready(function () {
   //button collapse events
   $(closeButton).click(() => {
     if (init1) {
-      (sidebar_ul).css({ "width": "400px", "margin-top": "0px" });
+      (sidebar_ul).css({ "width": "400px", "margin-top": "0px","background-color":"white" });
       menuList.css("display", "flex");
       $(desktop_side).toggle();
+      $(sidebarBullet).css("width", "400px");
       $(header).css({ "width": "400px", "position": "relative" });
       $(closeIcon).css("transform", "rotate(135deg)");
       module_content.css({ "display": "flex", "color": "gray" })
       return init1 = false;
     }
     else {
-      (sidebar_ul).css("width", "50px");
+    (sidebar_ul).css({"width": "50px","background-color":"transparent"});
       menuList.css("display", "none");
       desktop_side.toggle();
+      $(sidebarBullet).css("width", "50px");
       $(header).css("width", "100px");
       $(closeIcon).css("transform", "rotate(180deg)");
       module_content.css("display", "none")
@@ -41,6 +43,7 @@ $(document).ready(function () {
     $(sidebarBullet[i]).mouseenter(() => {
       if (init1) {
         (sidebar_ul).css("width", "400px");
+        $(sidebarBullet[i]).css("width", "400px");
         $(module_content[i]).css({ "display": "flex", "width": "auto" })
       }
       else {
@@ -53,7 +56,9 @@ $(document).ready(function () {
         (sidebar_ul).css("width", "400px");
       } else {
         (sidebar_ul).css("width", "50px");
-        $(module_content[i]).css("display", "none")
+        $(module_content[i]).css("display", "none");
+        $(sidebarBullet[i]).css("width", "50px");
+
       }
 
     })
@@ -89,15 +94,15 @@ $(document).ready(function () {
       let icon1 = $(".icon i");
       if (a !== "500px") {
         $(".notes").css("width", "500px");
-        $(".icon").removeClass("icon1");    
-        if(icon1.hasClass("fa-list")){
+        $(".icon").removeClass("icon1");
+        if (icon1.hasClass("fa-list")) {
           icon1.removeClass("fa-list").addClass("fa-times-circle")
         }
-      }    
+      }
 
       else {
         $(".notes").css("width", "auto");
-        $(".icon").addClass("icon1");          icon1.removeClass("fa-times-circle").addClass("fa-list")
+        $(".icon").addClass("icon1"); icon1.removeClass("fa-times-circle").addClass("fa-list")
 
       }
     }

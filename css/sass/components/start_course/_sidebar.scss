@@ -77,13 +77,21 @@
         display: block;
         margin-left: 0px;
         ul#container {
+          position: relative;
           margin-top: 60px;
-          background-color: $gb_color;
-          overflow-x: hidden;
-          min-width: 50px;
+          background-color: transparent;
+          overflow: hidden;
+          width: 50px;
           transition: width 0.5s ease-in-out;
-
+          .placeholder {
+            display: block;
+            height: 100%;
+            position: absolute;
+            width: 50px;
+            background-color: $gb_color;
+          }
           li {
+            position: relative;
             cursor: pointer;
             margin-bottom: 5px;
             list-style: none;
@@ -91,6 +99,7 @@
             display: flex;
             align-items: center;
             height: 50px;
+            width: 50px;
             background: linear-gradient(to left, white 50%, $brand_color 50%);
             background-size: 200% 100%;
             background-position: right bottom;
@@ -131,8 +140,9 @@
             }
             p:last-child {
               display: flex;
+              color: white !important;
               span {
-                color: white;
+                transition: color 1.5s;
               }
             }
           }
@@ -141,6 +151,10 @@
 
             p:first-child {
               background-color: $brand_color;
+            }
+            p:last-child{
+              background-color: $brand_color;
+              color: white !important;
             }
           }
         }
@@ -181,3 +195,5 @@
     }
   }
 }
+
+

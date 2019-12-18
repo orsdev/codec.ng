@@ -123,14 +123,23 @@ img {
     margin-left: 0px;
   }
   main .sidebar .content ul#container {
+    position: relative;
     margin-top: 60px;
-    background-color: #E9EDF1;
-    overflow-x: hidden;
-    min-width: 50px;
+    background-color: transparent;
+    overflow: hidden;
+    width: 50px;
     -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
   }
+  main .sidebar .content ul#container .placeholder {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 50px;
+    background-color: #E9EDF1;
+  }
   main .sidebar .content ul#container li {
+    position: relative;
     cursor: pointer;
     margin-bottom: 5px;
     list-style: none;
@@ -142,6 +151,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     height: 50px;
+    width: 50px;
     background: -webkit-gradient(linear, right top, left top, color-stop(50%, white), color-stop(50%, #004fef));
     background: linear-gradient(to left, white 50%, #004fef 50%);
     background-size: 200% 100%;
@@ -197,15 +207,21 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    color: white !important;
   }
   main .sidebar .content ul#container li:hover p:last-child span {
-    color: white;
+    -webkit-transition: color 1.5s;
+    transition: color 1.5s;
   }
   main .sidebar .content ul#container li.active {
     color: white;
   }
   main .sidebar .content ul#container li.active p:first-child {
     background-color: #004fef;
+  }
+  main .sidebar .content ul#container li.active p:last-child {
+    background-color: #004fef;
+    color: white !important;
   }
   main .sidebar .content aside {
     position: fixed;
@@ -319,7 +335,7 @@ img {
 
 @media screen and (min-width: 560px) {
   .row1 {
-    padding: 20px 30px 20px 100px;
+    padding: 20px 0;
   }
 }
 
@@ -524,7 +540,7 @@ img {
 
 @media screen and (min-width: 560px) {
   .main_content .row2 {
-    padding: 20px 30px 20px 100px;
+    padding: 20px 0px;
   }
   .main_content .row2 .follow aside.one {
     padding-left: 20px;
@@ -632,6 +648,22 @@ main .main_content .advert {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  .Content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 10fr;
+        grid-template-columns: 2fr 10fr;
+  }
+  .Content .sidebar {
+    position: static;
+  }
+  .Content .main_content {
+    padding: 0  30px;
+    margin-right: 20%;
+  }
 }
 
 .show_sidebar {
