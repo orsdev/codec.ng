@@ -5,7 +5,8 @@
 
  &__bg {
   background: linear-gradient(90deg,#232021 0,$deepblue);
-  padding: 50px 1rem;
+  padding: 80px 1rem;
+  position: relative;
  }
 
  &__header {
@@ -27,9 +28,13 @@
 
  &__courses{
   display: grid;
+  position: absolute;
+  right: 0;
+  top: 20px;
   justify-content: center;
 
   &-item {
+   box-sizing: border-box;
    border-radius: 6px;
    background: white;
    -webkit-border-radius: 6px;
@@ -47,8 +52,8 @@
 }
 
    .card {
-    height: 100px;
-    width: 100px;
+    height: 103px;
+    width: 110px;
 
     &-body {
      padding: 0;
@@ -69,37 +74,37 @@
 
 //hover effects
 .tech:hover {
- border-top: 3px solid $deepblue;
+ border-top: 4px solid $deepblue;
 }
 
 .lang:hover {
- border-top: 3px solid green;
+ border-top: 4px solid green;
 }
 
 .sci:hover {
- border-top: 3px solid purple;
+ border-top: 4px solid purple;
 }
 
 .health:hover {
- border-top: 3px solid red;
+ border-top: 4px solid red;
 }
 
 .bus:hover {
- border-top: 3px solid orange;
+ border-top: 4px solid orange;
 }
 
 .math:hover {
- border-top: 3px solid purple;
+ border-top: 4px solid purple;
 }
 
 .human:hover {
- border-top: 3px solid greenyellow;
+ border-top: 4px solid greenyellow;
 }
 
 .market:hover {
- border-top: 3px solid pink;
+ border-top: 4px solid #c81a7f;
 }
 
 .life:hover {
- border-top: 3px solid #c81a7f;
+ border-top: 4px solid #2a0040;
 }
