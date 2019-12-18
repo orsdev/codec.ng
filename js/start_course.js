@@ -14,7 +14,7 @@ $(document).ready(function () {
   //button collapse events
   $(closeButton).click(() => {
     if (init1) {
-      (sidebar_ul).css({ "width": "400px", "margin-top": "0px","background-color":"white" });
+      (sidebar_ul).css({ "width": "400px", "margin-top": "0px", "background-color": "white" });
       menuList.css("display", "flex");
       $(desktop_side).toggle();
       $(sidebarBullet).css("width", "400px");
@@ -24,7 +24,7 @@ $(document).ready(function () {
       return init1 = false;
     }
     else {
-    (sidebar_ul).css({"width": "50px","background-color":"transparent"});
+      (sidebar_ul).css({ "width": "50px", "background-color": "transparent" });
       menuList.css("display", "none");
       desktop_side.toggle();
       $(sidebarBullet).css("width", "50px");
@@ -47,7 +47,7 @@ $(document).ready(function () {
         $(module_content[i]).css({ "display": "flex", "width": "auto" })
       }
       else {
-        console.log(init1);
+        null
       }
 
     })
