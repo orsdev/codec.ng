@@ -7,25 +7,31 @@ $(document).ready(function () {
   let sidebarBullet = $("#container li")
   let menuList = $(".menuList");
   let desktop_side = $(".desktop_side");
-  let header = $(".sidebar header")
+  let header = $(".sidebar header");
+  let module_content = $($(".module_content"));
   let init1 = true;
 
   //button collapse events
   $(closeButton).click(() => {
     if (init1) {
-      (sidebar_ul).css("width", "400px");
+      (sidebar_ul).css({ "width": "400px", "margin-top": "0px", "background-color": "white" });
       menuList.css("display", "flex");
       $(desktop_side).toggle();
-      $(header).css("width", "500px");
-      $(closeIcon).css("transform", "rotate(130deg)")
+      $(sidebarBullet).css("width", "400px");
+      $(header).css({ "width": "400px", "position": "relative" });
+      $(closeIcon).css("transform", "rotate(135deg)");
+      module_content.css({ "display": "flex", "color": "gray" })
       return init1 = false;
     }
     else {
-      (sidebar_ul).css("width", "60px");
+      (sidebar_ul).css({ "width": "50px", "background-color": "transparent" });
       menuList.css("display", "none");
       desktop_side.toggle();
-      $(header).css("width", "150px");
-      $(closeIcon).css("transform", "rotate(180deg)")
+      $(sidebarBullet).css("width", "50px");
+      $(header).css("width", "100px");
+      $(closeIcon).css("transform", "rotate(180deg)");
+      module_content.css("display", "none")
+
       return init1 = true;
 
     }
@@ -33,15 +39,27 @@ $(document).ready(function () {
   })
 
   // menuList hover effect
-  for (let i = 0; i < sidebarBullet.length; i++) {
+  for (let i = 0; i < 8; i++) {
     $(sidebarBullet[i]).mouseenter(() => {
+      if (init1) {
         (sidebar_ul).css("width", "400px");
-        $(menuList[i]).css("display", "flex")
+        $(sidebarBullet[i]).css("width", "400px");
+        $(module_content[i]).css({ "display": "flex", "width": "auto" })
+      }
+      else {
+        null
+      }
 
     })
     $(sidebarBullet[i]).mouseleave(() => {
-        (sidebar_ul).css("width", "60px");
-        $(menuList).css("display", "none")
+      if (!init1) {
+        (sidebar_ul).css("width", "400px");
+      } else {
+        (sidebar_ul).css("width", "50px");
+        $(module_content[i]).css("display", "none");
+        $(sidebarBullet[i]).css("width", "50px");
+
+      }
 
     })
 
@@ -53,7 +71,7 @@ $(document).ready(function () {
   let init = $(angleIcon).hasClass("fa-angle-down")
   for (let i = 0; i < accordion_head.length; i++) {
     $(accordion_head[i]).click(() => {
-      $(accordion_head[i]).next().slideToggle(500);
+      $(accordion_head[i]).next().slideToggle(300);
       if (init == true) {
         $(angleIcon[i]).removeClass("fa-angle-down").addClass("fa-angle-up");
         init = false;
@@ -67,6 +85,40 @@ $(document).ready(function () {
 
     })
   }
+
+  // Fixed notes on the side
+  $(accordion_head[0]).click(() => {
+
+    if (window.innerWidth > 1200) {
+      let a = $(".notes").css("width");
+      let icon1 = $(".icon i");
+      if (a !== "500px") {
+        $(".notes").css("width", "500px");
+        $(".icon").removeClass("icon1");
+        if (icon1.hasClass("fa-list")) {
+          icon1.removeClass("fa-list").addClass("fa-times-circle")
+        }
+      }
+
+      else {
+        $(".notes").css("width", "auto");
+        $(".icon").addClass("icon1"); icon1.removeClass("fa-times-circle").addClass("fa-list")
+
+      }
+    }
+  });
+
+
+  //module nav
+  document.onscroll = function () {
+    if (window.innerHeight + window.scrollY > document.body.clientHeight - 100) {
+      $(".module_nav").css("display", "none");
+    }
+    else {
+      $(".module_nav").css("display", "flex");
+    }
+  }
+
 
   // ends here
 });
