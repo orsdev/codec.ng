@@ -1,3 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, san-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fafbfc;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .8;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .logged_in-container {
   text-align: right;
 }
@@ -46,6 +72,17 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: darkblue;
+  overflow: hidden;
+}
+
+.logged_in-container .logged_in span img {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: -30px;
 }
 
 .logged_in-container .logged_in .cart,
@@ -66,6 +103,17 @@
 
 .logged_in-container .logged_in .language .badge {
   color: white;
+}
+
+.logged_in-container .logged_in .language:hover {
+  background-color: #004fef !important;
+  color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.logged_in-container .logged_in .language:hover img {
+  display: block !important;
 }
 
 .mobile-login span {
