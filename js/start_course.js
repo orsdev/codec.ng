@@ -87,7 +87,7 @@ $(document).ready(function () {
   }
 
   // Fixed notes on the side
-  accordion_head.click(() => {
+  $(accordion_head[0]).click(() => {
 
     if (window.innerWidth > 1200) {
       let a = $(".notes").css("width");
