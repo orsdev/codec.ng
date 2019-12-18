@@ -1,6 +1,9 @@
 .row1 {
   padding: 0 10px;
   margin-top: 20px;
+  .breadcrumbs{
+    display: none;
+  }
   h3 {
     background-color: $gb_color;
     text-align: center;
@@ -57,6 +60,24 @@
 }
 @media screen and (min-width: 560px){
   .row1 {
-    padding: 20px 30px 20px 100px;
+    padding: 20px 0;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .breadcrumbs {
+    display: block !important;
+    padding: 20px 10px;
+    span{
+      color: gray;
+      
+    }
+    span::after{
+      content:"\00BB";
+      margin: 0 10px;
+    }
+    span:last-child::after{
+      content: "";
+    }
   }
 }

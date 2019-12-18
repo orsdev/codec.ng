@@ -51,7 +51,7 @@
             margin-left: 20px;
             i {
               color: $brand_color;
-              font-size: 30px;
+              font-size: 25px;
             }
             button {
               background-color: $brand_color;
@@ -113,7 +113,8 @@
               justify-content: center;
               align-items: center;
               img {
-                width: 30px;
+                margin-left: 20px;
+                width: 50px;
                 height: 30px;
               }
             }
@@ -146,7 +147,7 @@
   @media screen and (min-width: 560px) {
     .main_content {
         .row2 {
-          padding: 20px 30px 20px 100px;
+          padding: 20px 0px;
           .follow {
             aside.one {
               padding-left: 20px;
@@ -201,5 +202,36 @@
           }
         }
       }
+  }
+
+  @media screen and (min-width:1200px){
+    .notes {
+      position: fixed;
+      right: 0px;
+      top: 200px;
+      z-index: 5;
+
+      .lead {
+        box-shadow: none !important;
+        padding: 7px 10px 7px 30px !important;
+        i.fa-angle-down{
+          display: none;
+        }
+        .icon1{
+          position: absolute; 
+          left: -20px;
+          top: 0px;
+        }
+       
+      } 
+      .follow{
+          box-shadow: 1px 1px 5px gray;
+          padding-bottom: 30px;
+
+          textarea {
+            height: 250px;
+          }
+        }
+    }
   }
 

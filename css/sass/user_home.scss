@@ -1,3 +1,4 @@
+@import "./components/config";
 .logged_in-container {
   text-align: right;
   .logged_in {
@@ -30,6 +31,16 @@
         justify-content: center;
         align-items: center;
         background-color: darkblue;
+        overflow: hidden;
+      }
+      img{
+        display: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: -30px;
       }
     }
     .cart,
@@ -48,6 +59,15 @@
 
       .badge {
         color: white;
+      }
+    }
+    .language:hover{
+      background-color: $brand_color !important;
+      color: white;
+      transition: all .3s;
+
+      img{
+        display: block !important;
       }
     }
   }
