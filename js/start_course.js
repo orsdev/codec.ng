@@ -1,3 +1,18 @@
+//Video Youtube link source
+const video_list = [
+  "https://www.youtube.com/embed/V3krKm2OkZI",
+  "https://www.youtube.com/embed/eDp-PzVY3og",
+  "https://www.youtube.com/embed/qRE0WicGz4I",
+  "https://www.youtube.com/embed/rDX6aGfIBhs", 
+  "https://www.youtube.com/embed/V3krKm2OkZI",
+  "https://www.youtube.com/embed/eDp-PzVY3og",
+  "https://www.youtube.com/embed/qRE0WicGz4I",
+  "https://www.youtube.com/embed/rDX6aGfIBhs",
+  "https://www.youtube.com/embed/qRE0WicGz4I",
+  "https://www.youtube.com/embed/rDX6aGfIBhs",
+]
+
+
 $(document).ready(function () {
 
   //sidebar 
@@ -9,7 +24,15 @@ $(document).ready(function () {
   let desktop_side = $(".desktop_side");
   let header = $(".sidebar header");
   let module_content = $($(".module_content"));
+  let video_src = $(".video_item iframe");
   let init1 = true;
+
+  //Module video change function
+  for (let i = 0; i < sidebarBullet.length; i++) {
+    $(sidebarBullet[i]).click(() => {
+     video_src.attr("src", video_list[i])
+    });
+  }
 
   //button collapse events
   $(closeButton).click(() => {
@@ -44,7 +67,7 @@ $(document).ready(function () {
       if (init1) {
         (sidebar_ul).css("width", "400px");
         $(sidebarBullet[i]).css("width", "400px");
-        $(module_content[i]).css({ "display": "flex", "width": "auto" })
+        $(module_content[i]).css({ "display": "flex", "width": "auto", "transition": "color 2s" })
       }
       else {
         null
@@ -118,7 +141,6 @@ $(document).ready(function () {
       $(".module_nav").css("display", "flex");
     }
   }
-
 
   // ends here
 });
