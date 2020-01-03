@@ -21,10 +21,6 @@
   }
 
   .potential {
-   &__heading {
-    font-size: 2rem;
-   }
-
    &__details {
     flex-direction: column;
     width: 99%;
@@ -36,4 +32,21 @@
    }
   
   }
+
+  .main2-heading {
+   font-size: 1.7rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+ ul {
+
+  li {
+   font-size: 2rem;
+ 
+  li>span {
+   font-size: 1.1rem;
+  }
+ }
+ }
 }

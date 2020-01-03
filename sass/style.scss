@@ -1,6 +1,7 @@
  @import "components/navigation";
  @import "components/hero";
  @import "components/potential";
+ @import "components/opportunities";
  @import "components/responsive";
 
 *,
@@ -21,7 +22,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, san-serif;
   position: relative;
 }
 
@@ -31,6 +32,9 @@ p {
 
 .main2-heading {
  font-weight: 300;
-  color: #29303b;
-  opacity: .8;
+ font-size: 2.4rem;
+}
+
+.opacify{
+ opacity: .7;
 }
