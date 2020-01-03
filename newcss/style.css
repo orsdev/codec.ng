@@ -94,7 +94,7 @@
 }
 .opportunities__bg {
   background: #505763 url(../../img/exceptional-opportunity.png) center center no-repeat;
-  background-image: url(../../img/exceptional-opportunity.png);
+  background-image: url(../img/exceptional-opportunity.png);
   background-size: cover;
   padding-top: 30px;
   padding-bottom: 70px;
@@ -154,10 +154,14 @@
   }
 }
 @media (max-width: 600px) {
-  ul li {
-    font-size: 2rem;
+  .opportunities ul {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 120px));
+    gap: 20px;
   }
-  ul li li > span {
+  .opportunities ul li {
+    font-size: 2.5rem !important;
+  }
+  .opportunities ul li li > span {
     font-size: 1.1rem;
   }
 }

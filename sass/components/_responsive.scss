@@ -39,14 +39,17 @@
 }
 
 @media (max-width: 600px) {
+ .opportunities {
  ul {
-
+  grid-template-columns: repeat(auto-fit, minmax(110px, 120px));
+  gap: 20px;
   li {
-   font-size: 2rem;
+   font-size: 2.5rem !important;
  
   li>span {
    font-size: 1.1rem;
   }
  }
+}
  }
 }
