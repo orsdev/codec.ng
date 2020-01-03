@@ -1,0 +1,39 @@
+.navs {
+ width: 100%;
+ background-color: white;
+
+ &__mobile {
+  width: 99%;
+  padding: 1rem .7rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  &-icon {
+   width: 70px;
+  }
+
+  &-logo {
+   width: calc(100% - 110px);
+   text-align: center;
+   font-size: 1.5rem;
+   a {
+    text-decoration: none;
+    color: black;
+   }
+  }
+
+  &-cart {
+   width: 40px;
+   text-align: right;
+  }
+
+  .fa {
+   font-size: 1.3rem;
+  }
+
+  .fa-search {
+   padding-left: 20px;
+  }
+ }
+}

@@ -1,0 +1,153 @@
+.navs {
+  width: 100%;
+  background-color: white;
+}
+.navs__mobile {
+  width: 99%;
+  padding: 1rem 0.7rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.navs__mobile-icon {
+  width: 70px;
+}
+.navs__mobile-logo {
+  width: calc(100% - 110px);
+  text-align: center;
+  font-size: 1.5rem;
+}
+.navs__mobile-logo a {
+  text-decoration: none;
+  color: black;
+}
+.navs__mobile-cart {
+  width: 40px;
+  text-align: right;
+}
+.navs__mobile .fa {
+  font-size: 1.3rem;
+}
+.navs__mobile .fa-search {
+  padding-left: 20px;
+}
+
+.hero__bg {
+  background-image: url(../../img/header-image.jpg);
+  background-image: url(../img/header-image.jpg);
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.hero__body {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.hero__body .btn {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  margin-top: 1.4rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.hero__main-text {
+  font-size: 3rem;
+}
+.hero__sub-text {
+  font-size: 1.2rem;
+  width: 400px;
+}
+
+.potential {
+  width: 100%;
+  text-align: center;
+  opacity: 0.8;
+}
+.potential__heading {
+  font-size: 2.4rem;
+}
+.potential hr {
+  border: 1px solid #29303b;
+  width: 45px;
+  margin: 0 auto;
+}
+.potential .fa, .potential .fas {
+  font-size: 2.8rem;
+}
+.potential__details {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding-left: 60px;
+  padding-right: 60px;
+  justify-content: center;
+}
+.potential__text {
+  margin-right: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 790px) {
+  .hero__bg {
+    padding-top: 170px;
+    padding-bottom: 20px;
+  }
+  .hero__main-text {
+    font-size: 2rem;
+  }
+  .hero__sub-text {
+    font-size: 1.1rem;
+    width: 80%;
+  }
+  .hero .btn {
+    width: 100%;
+    margin-top: 1.3rem;
+  }
+
+  .potential__heading {
+    font-size: 2rem;
+  }
+  .potential__details {
+    flex-direction: column;
+    width: 99%;
+    margin: 0 auto;
+  }
+  .potential__text {
+    margin-bottom: 20px;
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.main2-heading {
+  font-weight: 300;
+  color: #29303b;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=style.css.map */

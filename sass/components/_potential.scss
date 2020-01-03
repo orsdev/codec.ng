@@ -1,0 +1,32 @@
+.potential {
+ width: 100%;
+ text-align: center;
+ opacity: .8;
+
+ &__heading {
+  font-size: 2.4rem;
+ }
+
+ hr {
+  border: 1px solid #29303b;
+  width: 45px;
+  margin: 0 auto;
+ }
+
+ .fa, .fas {
+  font-size: 2.8rem;
+ }
+
+ &__details {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding-left: 60px;
+  padding-right: 60px;
+  justify-content: center;
+ }
+
+&__text{
+  margin-right: 20px;
+ }
+}

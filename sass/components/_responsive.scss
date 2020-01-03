@@ -1,0 +1,39 @@
+@media (min-width: 0px) and (max-width: 790px) {
+  .hero {
+    &__bg {
+      padding-top: 170px;
+      padding-bottom: 20px;
+    }
+
+    &__main-text {
+      font-size: 2rem;
+    }
+    
+    &__sub-text {
+     font-size: 1.1rem;
+     width: 80%;
+    }
+
+    .btn {
+      width: 100%;
+      margin-top: 1.3rem;
+    }
+  }
+
+  .potential {
+   &__heading {
+    font-size: 2rem;
+   }
+
+   &__details {
+    flex-direction: column;
+    width: 99%;
+    margin: 0 auto;
+   }
+
+   &__text{
+    margin-bottom: 20px;
+   }
+  
+  }
+}
