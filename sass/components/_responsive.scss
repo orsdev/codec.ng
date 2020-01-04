@@ -8,10 +8,10 @@
     &__main-text {
       font-size: 2rem;
     }
-    
+
     &__sub-text {
-     font-size: 1.1rem;
-     width: 80%;
+      font-size: 1.1rem;
+      width: 80%;
     }
 
     .btn {
@@ -21,35 +21,78 @@
   }
 
   .potential {
-   &__details {
-    flex-direction: column;
-    width: 99%;
-    margin: 0 auto;
-   }
+    &__details {
+      flex-direction: column;
+      width: 99%;
+      margin: 0 auto;
+    }
 
-   &__text{
-    margin-bottom: 20px;
-   }
-  
+    &__text {
+      margin-bottom: 20px;
+    }
   }
 
   .main2-heading {
-   font-size: 1.7rem !important;
+    font-size: 1.7rem !important;
   }
 }
 
 @media (max-width: 600px) {
- .opportunities {
- ul {
-  grid-template-columns: repeat(auto-fit, minmax(110px, 120px));
-  gap: 20px;
-  li {
-   font-size: 2.5rem !important;
- 
-  li>span {
-   font-size: 1.1rem;
+  .opportunities {
+    ul {
+      grid-template-columns: repeat(auto-fit, minmax(110px, 120px));
+      gap: 20px;
+      li {
+        font-size: 2.5rem !important;
+
+        li > span {
+          font-size: 1.1rem;
+        }
+      }
+    }
   }
- }
 }
- }
+
+@media (max-width: 899px) {
+  .envision {
+    .envision__body {
+      margin-top: -45px;
+      padding-top: 0px;
+      &-icon {
+        display: none;
+      }
+
+      img {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .envision {
+    .envision__body {
+      &-content {
+        text-align: left;
+        // padding-left: 100px;
+        padding-right: 50px;
+      }
+      &-image {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+.card-columns {
+ -webkit-column-count: 1; 
+ -moz-column-count: 1;
+ column-count: 1;
+ -webkit-column-gap: 1.25rem;
+ -moz-column-gap: 1.25rem;
+ column-gap: 1.25rem;
+ orphans: 1;
+ widows: 1;
+}
 }

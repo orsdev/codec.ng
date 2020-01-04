@@ -2,6 +2,8 @@
  @import "components/hero";
  @import "components/potential";
  @import "components/opportunities";
+ @import "components/envision";
+ @import "components/testimonial";
  @import "components/responsive";
 
 *,
@@ -36,5 +38,11 @@ p {
 }
 
 .opacify{
- opacity: .7;
+ opacity: .8;
 }
+
+.bottom-line {
+  border: 1px solid #288745;
+  width: 45px;
+  margin: 0 auto;
+ }
