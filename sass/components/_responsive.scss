@@ -1,4 +1,4 @@
-@media (min-width: 0px) and (max-width: 790px) {
+@media (max-width: 790px) {
   .hero {
     &__bg {
       padding-top: 170px;
@@ -20,20 +20,61 @@
     }
   }
 
+  .navs__mobile {
+   display: block !important;
+   display: flex !important;
+  }
+
+  .navs__desktop {
+   display: none;
+  }
+  
+  .instructor {
+   padding-left: .8rem;
+   padding-right: .8rem;
+   .btn{
+    width: 100%;
+   }
+  }
+
   .potential {
     &__details {
       flex-direction: column;
-      width: 99%;
+      width: 90%;
+      padding-left: 10px;
+      padding-right: 10px;
       margin: 0 auto;
     }
 
     &__text {
+     margin: auto;
       margin-bottom: 20px;
     }
   }
 
   .main2-heading {
     font-size: 1.7rem !important;
+  }
+
+  .footer {
+   &__links-1 {
+    display: none;
+   }
+   &__links-2 {
+    display: none;
+   }
+   &__links-3 {
+    display: none;
+   }
+  }
+
+  .copyright {
+   align-items: normal;
+   flex-direction: column;
+
+   &__links {
+    padding-left: 70px !important;
+   }
   }
 }
 
@@ -56,15 +97,19 @@
 @media (max-width: 899px) {
   .envision {
     .envision__body {
+     &-content {
+      padding: 0;
+     }
+
       margin-top: -45px;
       padding-top: 0px;
       &-icon {
         display: none;
       }
 
-      img {
-        width: 60%;
-      }
+      &-image {
+       display: none;
+     }
     }
   }
 }
@@ -74,12 +119,10 @@
     .envision__body {
       &-content {
         text-align: left;
-        // padding-left: 100px;
+        padding-left: 40px;
         padding-right: 50px;
       }
-      &-image {
-        display: none;
-      }
+    
     }
   }
 }
