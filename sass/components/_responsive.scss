@@ -95,4 +95,18 @@
  orphans: 1;
  widows: 1;
 }
+
+.help {
+ &__text {
+  padding: 0 80px;
+ }
+}
+}
+
+@media (max-width: 590px) {
+.help {
+ &__text {
+  padding: 0 20px;
+ }
+}
 }

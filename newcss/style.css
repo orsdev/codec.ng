@@ -169,6 +169,9 @@
 .testimonial {
   margin-top: 130px;
 }
+.testimonial-para {
+  font-size: 1.3rem;
+}
 .testimonial img {
   width: 80px;
   height: 80px;
@@ -198,6 +201,22 @@
 }
 .testimonial .card-3 {
   border-top: 7px solid yellow;
+}
+
+.help {
+  margin-top: 80px;
+}
+.help__bg {
+  background: #505763 url(../../img/help.jpg) top center no-repeat;
+  background-image: url(../img/help.jpg);
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+.help__text {
+  font-size: 1.3rem;
+  padding: 0 150px;
+  margin-top: 140px;
 }
 
 @media (min-width: 0px) and (max-width: 790px) {
@@ -273,6 +292,15 @@
     column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
+  }
+
+  .help__text {
+    padding: 0 80px;
+  }
+}
+@media (max-width: 590px) {
+  .help__text {
+    padding: 0 20px;
   }
 }
 *,
