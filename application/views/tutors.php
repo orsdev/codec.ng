@@ -23,13 +23,76 @@
   content="E-learning site, where registered students learn there favourite courses at their own pace">
  <meta name="twitter:image" content="">
 
+
+
  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/slick-theme.css">
  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/slick.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/tutor.css">
+ 
  <title>Codec | TUTORS PAGE</title>
+
+ <!-- jquery function for signup -->
+	 <script type="text/javascript">
+
+		function signup() {
+
+			// loading starts
+			let submit_button = document.getElementById('submit_button');
+			let buttonText = document.getElementById('buttonText');
+			let loader = document.getElementById('loader');
+
+			buttonText.textContent = 'Loading...Please Wait';
+			submit_button.disabled = true;
+			loader.style.display = 'inline';
+
+			let fullname = jQuery('#fullname').val();
+			let email = jQuery('#email').val();
+			let password = jQuery('#password').val();
+			let subscription = jQuery('#subscription').val();
+
+			jQuery.post('<?php echo base_url(); ?>app/signup_action', {
+				fullname: fullname,
+				email: email,
+				password: password,
+				subscription: subscription
+			},
+			function(data){
+					// list.innerHTML = data;
+					// loading ends
+					buttonText.textContent = 'Sign up';
+					submit_button.disabled = false;
+					loader.style.display = 'none';
+					jQuery('#result').html(data);
+			});
+
+		}
+
+		function toggleSubscription() {
+
+			let subscription = document.getElementById("subscription");
+
+			if(subscription.checked == true) {
+				subscription.value = "yes";
+			} else {
+				subscription.value = "no";
+			}
+
+		}
+
+	</script>
+
+	<style type="text/css">
+		.error{
+			color: red;
+		}
+		.success{
+			color: green;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -74,7 +137,7 @@
   </nav>
   <nav class="navs__desktop">
    <div class="navs__desktop-logo">
-    <a href="index.html"><img src="img/codaclogo.png" alt=""></a>
+    <a href="index.html"><img src="<?php echo base_url(); ?>assets/img/codaclogo.png" alt=""></a>
 
     <div class="dropdown">
      <span id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -154,7 +217,7 @@
   </div>
   <!-- SIGNUP Modal -->
   <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
-   aria-hidden="true">
+	 aria-hidden="true">
    <div class="modal-dialog" role="document">
     <div class="modal-content">
      <div class="modal-header">
@@ -165,28 +228,32 @@
      </div>
      <div class="modal-body">
 
-      <form action="" method="post" id="modalsignupform" class="mt-1">
-				
+      <form method="post" id="signupform" class="mt-1"> 
+
        <div class="form-group">
         <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod amet sint odio
          voluptates deleniti!
         </p>
 			 </div>
+
+			 <ul id="result"></ul>
 			 
        <div class="form-group">
-        <input type="text" name="modalfullname" id="modalfullname" placeholder="Full Name">
+        <input type="text" name="fullname" id="fullname" placeholder="Full Name">
 			 </div>
 			 
        <div class="form-group">
-        <input type="email" name="modalsignup-email" id="modalsignup-email" placeholder="Email">
+        <input type="email" name="email" id="email" placeholder="Email">
 			 </div>
 			 
        <div class="form-group">
-        <input type="password" name="modalsignup-password" id="modalsign-password" placeholder="Password">
+        <input type="password" name="password" id="password" placeholder="Password">
 			 </div>
 			 
        <div class="form-check">
-        <input type="checkbox" name="signup-checkbox" class="form-check-input" id="signup-check">
+
+				<input type="checkbox" name="subscription" class="form-check-input" id="subscription" onclick="toggleSubscription()">
+
         <label for="signup-check" class="text-left form-check-label">
          I want to get the most out of my experience, by receiving emails with insider tips, motivation, special
          updates and promotions reserved for instructors.
@@ -194,8 +261,17 @@
 			 </div>
 			 
        <div class="form-group">
-        <input type="submit" type="button" class=" mt-2 btn btn-lg btn-block btn-danger" name="modalsignup-submit"
-         id="modalsignup-submit" value="Sign Up">
+				<!-- <input type="button" class="mt-2 btn btn-lg btn-block btn-danger" name="submit_button" id="submit_button" value="Sign Up" onclick="signup()"> -->
+				
+				<button type="button" class="mt-2 btn btn-lg btn-block btn-danger" name="submit_button" id="submit_button" onclick="signup()">
+
+					<span id="loader" style="display:none;">
+						<img src="<?php echo base_url(); ?>assets/loader.gif" style="width: 30px; height: 30px;" />
+					</span>
+
+					<span id="buttonText">Sign Up</span>
+				</button>
+
 			 </div>
 			 
 			</form>
@@ -352,7 +428,7 @@
       </div>
       <div class="col-lg-6">
        <div class="envision__body-image">
-        <img src="img/test.png" alt="">
+        <img src="<?php echo base_url(); ?>assets/img/test.png" alt="">
        </div>
       </div>
      </div>
@@ -380,7 +456,7 @@
       </div>
       <div class="col-lg-6">
        <div class="envision__body-image">
-        <img src="img/media.png" alt="">
+        <img src="<?php echo base_url(); ?>assets/img/media.png" alt="">
        </div>
       </div>
      </div>
@@ -522,7 +598,10 @@
    </div>
   </footer>
  </section>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script> -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
  <script src="<?php echo base_url(); ?>assets/js/slick.min.js"></script>
