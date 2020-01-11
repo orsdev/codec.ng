@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, san-serif;
+  position: relative;
+}
+
+.user {
+  padding: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.user span {
+  padding: 0.4rem 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.user__name {
+  color: white;
+  margin-left: 10px;
+  margin-right: 6px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/*# sourceMappingURL=dashboard.css.map */
