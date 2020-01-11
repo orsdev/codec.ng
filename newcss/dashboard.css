@@ -1,3 +1,38 @@
+.createcourse__container {
+  width: 95% !important;
+  margin: auto;
+  padding: 2rem 0.8rem;
+  box-shadow: 2px 4px 5px 0.1px gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.createcourse__text {
+  display: flex;
+  align-items: center;
+}
+.createcourse__text .fa {
+  font-size: 2.5rem;
+}
+.createcourse__button {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+@media (max-width: 600px) {
+  .createcourse__container {
+    flex-direction: column;
+  }
+  .createcourse__button {
+    margin-top: 0.9rem;
+  }
+  .createcourse h3 {
+    font-size: 1.6rem;
+  }
+}
 *,
 *::before,
 *::after {

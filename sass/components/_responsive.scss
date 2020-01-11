@@ -1,0 +1,16 @@
+@media (max-width: 600px){
+ .createcourse {
+
+  &__container {
+  flex-direction: column;
+  }
+
+  &__button {
+   margin-top: .9rem;
+  }
+
+  h3 {
+   font-size: 1.6rem;
+  }
+ }
+}
