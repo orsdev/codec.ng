@@ -1,83 +1,85 @@
-@media (max-width: 900px){
- .createcourse {
+@media (max-width: 900px) {
+  .createcourse {
+    &__container {
+      flex-direction: column;
+    }
 
-  &__container {
-  flex-direction: column;
+    &__button {
+      margin-top: 0.9rem;
+    }
+
+    .fa {
+      font-size: 4.5rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
   }
 
-  &__button {
-   margin-top: .9rem;
+  .engaging {
+    flex-direction: column;
+    padding: 0.8rem 0.6rem;
   }
 
-  .fa {
-   font-size: 4.5rem;
+  .video {
+    grid-template-columns: 1fr;
+
+    &__img {
+      flex: 0 0 100%;
+    }
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+
+    &__audience {
+      flex-direction: column;
+    }
+
+    &__start {
+      flex-direction: column;
+    }
   }
 
-  h3 {
-   font-size: 1.8rem;
+  .newcomer {
+   padding: 0.8rem 0.6rem;
+    grid-template-columns: 1fr;
   }
- }
-
- .engaging {
-  flex-direction: column;
-  padding: .8rem .6rem;
- }
-
- .video {
-  grid-template-columns: 1fr;
-
-  &__img {
-   flex: 0 0 100%;
-  }
- 
-  img {
-   width: 250px;
-   height: 250px;
-  }
- 
-  &__audience{
-flex-direction: column;
-  }
- 
-  &__start {
-   flex-direction: column;
-  }
-
- }
 }
 
-@media (min-width: 900px) and (max-width: 1100px){
- .createcourse {
-  h3 {
-   font-size: 2rem;
-  }
+@media (min-width: 900px) and (max-width: 1100px) {
+  .createcourse {
+    h3 {
+      font-size: 2rem;
+    }
 
-   .fa {
-    font-size: 5rem;
-  }
+    .fa {
+      font-size: 5rem;
+    }
 
-  &__button{
-   width: 200px;
- }
- }
+    &__button {
+      width: 200px;
+    }
+  }
 }
 
 @media (max-width: 800px) {
+  .wrapper {
+    display: block;
+    width: 100%;
+  }
 
- .wrapper {
-  display: block;
-  width: 100%;
- }
+  .sidebar {
+    display: none;
+  }
 
- .sidebar {
-  display: none;
- }
+  .divider {
+    display: none;
+  }
 
- .divider {
-  display: none;
- }
-
- main {
-  width: 100vw !important;
- }
+  main {
+    width: 100vw !important;
+  }
 }

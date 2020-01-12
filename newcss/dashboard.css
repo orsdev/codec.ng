@@ -105,6 +105,7 @@
 }
 .engaging a {
   width: 65px;
+  font-size: 1.1rem;
 }
 
 .video {
@@ -134,8 +135,35 @@
   align-items: center;
 }
 .video a {
-  font-size: 1rem;
-  width: 75px;
+  width: 85px;
+  font-size: 1.1rem;
+}
+
+.newcomer {
+  box-shadow: 2px 4px 5px 0.1px gainsboro;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.newcomer__img {
+  width: 100%;
+  text-align: center;
+}
+.newcomer__img img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+.newcomer__body {
+  padding-right: 1.4rem;
+}
+.newcomer p {
+  padding-right: 1.5rem;
+}
+.newcomer a {
+  width: 65px;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 900px) {
@@ -172,6 +200,11 @@
   }
   .video__start {
     flex-direction: column;
+  }
+
+  .newcomer {
+    padding: 0.8rem 0.6rem;
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 900px) and (max-width: 1100px) {

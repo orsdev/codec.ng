@@ -1,0 +1,32 @@
+.newcomer {
+  box-shadow: 2px 4px 5px 0.1px gainsboro;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+ 
+  &__img {
+   width: 100%;
+   text-align: center;
+
+   img {
+    width: 150px;
+    height: 150px; 
+    object-fit: contain;
+   }
+  }
+
+  &__body {
+   padding-right: 1.4rem;
+  }
+ 
+  p {
+   padding-right: 1.5rem;
+  }
+ 
+  a {
+   width: 65px;
+   font-size: 1.1rem;
+  }
+ 
+}
