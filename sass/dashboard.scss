@@ -1,7 +1,8 @@
 @import "components/createcourse";
+@import "components/sidebar";
+@import "components/engaging";
+@import "components/videoaudience";
 @import "components/responsive";
-
-
 
 *,
 *::before,
@@ -24,29 +25,61 @@ body {
 }
 
 .user {
- padding: .8rem 0;
- display: flex;
- align-items: center;
- justify-content: flex-end;
- 
- span {
-  padding: .4rem .5rem;
-  font-weight: bold;
-  cursor: pointer;
- }
+  padding: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
- &__name {
-  color: white;
-  margin-left: 10px;
-  margin-right: 6px;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: grey;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  span {
+    padding: 0.4rem 0.5rem;
+    font-weight: normal;
+    cursor: pointer;
+
+    .fa {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__name {
+    color: white;
+    margin-left: 13px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: grey;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
 }
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 20px;
+}
+
+main {
+  position: relative;
+  padding: 0 2rem;
+  padding-right: 3.5rem;
+}
+
+.opacify {
+ opacity: .8;
+}
+
+.marginbt {
+ margin-top: 55px;
+ margin-bottom: 55px;
+}
+
+p {
+ font-size: 1.1rem;
 }

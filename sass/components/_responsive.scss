@@ -1,4 +1,4 @@
-@media (max-width: 600px){
+@media (max-width: 900px){
  .createcourse {
 
   &__container {
@@ -9,8 +9,75 @@
    margin-top: .9rem;
   }
 
-  h3 {
-   font-size: 1.6rem;
+  .fa {
+   font-size: 4.5rem;
   }
+
+  h3 {
+   font-size: 1.8rem;
+  }
+ }
+
+ .engaging {
+  flex-direction: column;
+  padding: .8rem .6rem;
+ }
+
+ .video {
+  grid-template-columns: 1fr;
+
+  &__img {
+   flex: 0 0 100%;
+  }
+ 
+  img {
+   width: 250px;
+   height: 250px;
+  }
+ 
+  &__audience{
+flex-direction: column;
+  }
+ 
+  &__start {
+   flex-direction: column;
+  }
+
+ }
+}
+
+@media (min-width: 900px) and (max-width: 1100px){
+ .createcourse {
+  h3 {
+   font-size: 2rem;
+  }
+
+   .fa {
+    font-size: 5rem;
+  }
+
+  &__button{
+   width: 200px;
+ }
+ }
+}
+
+@media (max-width: 800px) {
+
+ .wrapper {
+  display: block;
+  width: 100%;
+ }
+
+ .sidebar {
+  display: none;
+ }
+
+ .divider {
+  display: none;
+ }
+
+ main {
+  width: 100vw !important;
  }
 }

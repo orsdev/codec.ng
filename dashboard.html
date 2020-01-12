@@ -29,27 +29,118 @@
  <link rel="stylesheet" href="newcss/dashboard.css">
  <title>Codec | DASHBOARD</title>
 </head>
+
 <body>
+ <div class="wrapper">
+ <!-- SIDE BAR -->
+ <section class="sidebar" id="sidebar">
+  <nav class="sidebar__nav">
+
+     <ul class="sidebar__nav-list">
+      <li class="list-item list-logo">
+       <a href="#"> <img src="./img/codaclogo.png" alt="codac logo">
+       </a></li>
+      <li class="list-item active-list">
+       <a href="#">
+        <i class="fa fa-play-circle-o"></i>
+        Courses
+       </a></li>
+      <li class="list-item">
+       <a href="#">
+        <i class="fas fa-comment-dots"></i>
+        Communication
+       </a></li>
+      <li class="list-item">
+       <a href="#">
+        <i class="fas fa-chart-bar"></i>
+        Performance
+       </a></li>
+      <li class="list-item">
+       <a href="#">
+        <i class="fa fa-wrench"></i>
+       Tools
+       </a></li>
+      <li class="list-item">
+       <a href="#">
+        <i class="fa fa-question-circle-o"></i>
+       Resourses
+       </a></li>
+     </ul>
+  </nav>
+ </section>
+
+ <div class="divider"></div>
  <!-- USER SECTION -->
-<section class="user" id="user">
-<span class="user__role">Student</span>
-<span class="user__notify">
- <i class="fa fa-bell-o" aria-hidden="true"></i>
-</span>
-<span class="user__name">Joe</span>
+<main>
+ <section class="user" id="user">
+  <span class="user__role">Student</span>
+  <span class="user__notify">
+   <i class="fa fa-bell-o" aria-hidden="true"></i>
+  </span>
+  <div class="user__name">
+   <span class="user__initials">OO</span></div>
+ </section>
+
+ <!-- CREATE COURSE -->
+ <section class="createcourse mt-4" id="createcourse">
+  <div class="createcourse__container">
+   <span class="createcourse__text">
+    <i class="fa fa-sticky-note-o text-primary mr-4" aria-hidden="true"></i>
+    <h3>Jump Into Course Creation</h3>
+   </span>
+   <a href="#">
+    <button class="btn btn-lg btn-danger createcourse__button">Create Your Course</button>
+   </a>
+  </div>
+ </section>
+
+ <div class="info marginbt" id="info">
+  <h3>Based on your experience, we think these resources will be helpful.</h3>
+ </div>
+
+ <!-- ENGAGING SECTION -->
+ <section class="engaging" id="engaging">
+  <span class="engaging__img">
+   <img src="/img/laptop.png" alt="laptop">
+  </span>
+  <div class="engaging__body">
+   <h4 class="opacify">Create an Engaging Course</h4>
+   <p class="mt-4 opacify">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eius ut consequatur! Voluptates ducimus repudiandae tempora, consectetur quo nulla voluptate aperiam quod, repellendus dignissimos voluptatem ad dolore? Atque, numquam odit.
+   </p>
+   <a href="#" class="class mt-5">Get Started</a>
+  </div>
+ </section>
+
+ <!-- AUDIENCE & VIDEO -->
+<section class="video mt-4" id="video">
+<div class="video__start">
+ <span class="video__img">
+  <img src="img/video.png" alt="video"></span>
+ <div class="video__body">
+  <h5>Get Started with Video</h5>
+  <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+   <a href="#" class=" d-block mt-3">Get Started</a>
+  </p>
+ </div>
+</div>
+
+<div class="video__audience">
+ <span class="video__img">
+  <img src="img/chat.png" alt="video">
+  </span>
+ <div class="video__body">
+  <h5>Build Your Audience</h5>
+  <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+   <a href="#" class="mt-3 d-block">Get Started</a>
+  </p>
+ </div>
+</div>
 </section>
 
-<!-- CREATE COURSE -->
-<section class="createcourse mt-4" id="createcourse">
- <div class="createcourse__container">
-  <span class="createcourse__text">
-   <i class="fa fa-sticky-note-o text-primary mr-3" aria-hidden="true"></i>
-   <h3>Jump Into Course Creation</h3>
-  </span>
-  <a href="#">
-   <button class="btn btn-md btn-danger createcourse__button">Create Your Course</button>
-  </a>
+
+ </main>
  </div>
-</section>
 </body>
+<script src="js/dashboard.js"></script>
 </html>

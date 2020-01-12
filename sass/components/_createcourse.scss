@@ -1,9 +1,8 @@
 .createcourse {
 
  &__container {
-  width: 95% !important;
   margin: auto;
-  padding: 2rem .8rem;
+  padding: 3.5rem .8rem;
   box-shadow: 2px 4px 5px .1px gainsboro;
   display: flex;
   align-items: center;
@@ -15,15 +14,27 @@
   align-items: center;
 
   .fa {
+   font-size: 6rem;
+  }
+
+  h3 {
+   font-weight: 100;
    font-size: 2.5rem;
+   font-family: sans-serif;
   }
  }
 
  &__button{
+  width: 250px;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
+}
+
+.info {
+ text-align: center;
+ opacity: .8;
 }

@@ -1,7 +1,6 @@
 .createcourse__container {
-  width: 95% !important;
   margin: auto;
-  padding: 2rem 0.8rem;
+  padding: 3.5rem 0.8rem;
   box-shadow: 2px 4px 5px 0.1px gainsboro;
   display: flex;
   align-items: center;
@@ -12,9 +11,15 @@
   align-items: center;
 }
 .createcourse__text .fa {
+  font-size: 6rem;
+}
+.createcourse__text h3 {
+  font-weight: 100;
   font-size: 2.5rem;
+  font-family: sans-serif;
 }
 .createcourse__button {
+  width: 250px;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -22,15 +27,180 @@
   -o-border-radius: 0;
 }
 
-@media (max-width: 600px) {
+.info {
+  text-align: center;
+  opacity: 0.8;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  overflow-x: hidden;
+  height: 100vh;
+  z-index: 100;
+  background: #52143e;
+  transition: 0.4s;
+}
+.sidebar:hover {
+  width: 260px;
+}
+.sidebar .list-logo {
+  margin-bottom: 20px;
+}
+.sidebar .list-logo:hover {
+  background-color: transparent;
+}
+.sidebar .list-logo img {
+  width: 50px;
+  height: 50px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.sidebar ul li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: 0.3s;
+}
+.sidebar ul li:hover {
+  background: #771d5a;
+}
+.sidebar ul li a > i {
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 0 0.7rem;
+}
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.active-list {
+  border-left: 4px solid red;
+}
+
+.engaging {
+  margin: auto;
+  box-shadow: 2px 4px 5px 0.1px gainsboro;
+  display: flex;
+  align-items: center;
+}
+.engaging__img {
+  flex: 0 0 40%;
+  text-align: center;
+}
+.engaging__img img {
+  width: 250px;
+  height: 250px;
+}
+.engaging p {
+  padding-right: 1.5rem;
+}
+.engaging a {
+  width: 65px;
+}
+
+.video {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.video__img {
+  flex: 0 0 40%;
+  text-align: center;
+}
+.video img {
+  width: 150px;
+  height: 150px;
+}
+.video__audience {
+  display: flex;
+  padding: 0.8rem 0.2rem;
+  align-items: center;
+  box-shadow: 2px 4px 5px 0.1px gainsboro;
+}
+.video__start {
+  display: flex;
+  padding: 0.8rem 0.2rem;
+  box-shadow: 2px 4px 5px 0.1px gainsboro;
+  align-items: center;
+}
+.video a {
+  font-size: 1rem;
+  width: 75px;
+}
+
+@media (max-width: 900px) {
   .createcourse__container {
     flex-direction: column;
   }
   .createcourse__button {
     margin-top: 0.9rem;
   }
+  .createcourse .fa {
+    font-size: 4.5rem;
+  }
   .createcourse h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+  }
+
+  .engaging {
+    flex-direction: column;
+    padding: 0.8rem 0.6rem;
+  }
+
+  .video {
+    grid-template-columns: 1fr;
+  }
+  .video__img {
+    flex: 0 0 100%;
+  }
+  .video img {
+    width: 250px;
+    height: 250px;
+  }
+  .video__audience {
+    flex-direction: column;
+  }
+  .video__start {
+    flex-direction: column;
+  }
+}
+@media (min-width: 900px) and (max-width: 1100px) {
+  .createcourse h3 {
+    font-size: 2rem;
+  }
+  .createcourse .fa {
+    font-size: 5rem;
+  }
+  .createcourse__button {
+    width: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .wrapper {
+    display: block;
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  main {
+    width: 100vw !important;
   }
 }
 *,
@@ -61,22 +231,53 @@ body {
 }
 .user span {
   padding: 0.4rem 0.5rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
+}
+.user span .fa {
+  font-size: 1.5rem;
 }
 .user__name {
   color: white;
-  margin-left: 10px;
-  margin-right: 6px;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
+  margin-left: 13px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
   background-color: grey;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 20px;
+}
+
+main {
+  position: relative;
+  padding: 0 2rem;
+  padding-right: 3.5rem;
+}
+
+.opacify {
+  opacity: 0.8;
+}
+
+.marginbt {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+p {
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=dashboard.css.map */
