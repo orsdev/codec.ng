@@ -1,5 +1,5 @@
 function openNav(){
- document.querySelector(".mobile__sidebar-bg").style.width = "300px";
+ document.querySelector(".mobile__sidebar-bg").style.width = "290px";
  document.querySelector(".mobile__sidebar").style.width = "100%";
  document.querySelector(".mobile__sidebar-bg").style.transform = "translate(0)";
 }

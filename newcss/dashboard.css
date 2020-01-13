@@ -272,17 +272,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 500;
+  z-index: 800;
   width: 0;
   height: 100%;
   color: #52143e;
 }
 .mobile__sidebar-bg {
-  padding: 10px 5px;
+  padding: 25px 8px;
   background-color: white;
   width: 0;
   height: 100%;
-  z-index: 600;
+  z-index: 900;
   transition: 0.3s;
   transform: translate(-500px);
 }
