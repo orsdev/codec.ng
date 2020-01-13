@@ -5,6 +5,8 @@
 @import "components/newcomer";
 @import "components/resources";
 @import "components/ready";
+@import "components/footer";
+@import "components/mobilenav";
 @import "components/responsive";
  
 *,
@@ -18,6 +20,7 @@
 html {
   scroll-behavior: smooth;
   max-width: 100%;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -28,6 +31,8 @@ body {
 }
 
 .user {
+ position: relative;
+ z-index: 10000;
   padding: 0.8rem 0;
   display: flex;
   align-items: center;
@@ -58,6 +63,11 @@ body {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+
+    li {
+     border: none;
+     outline: none;
+    }
   }
 }
 
@@ -70,6 +80,7 @@ body {
 
 main {
   position: relative;
+  z-index: 150;
   padding: 0 2rem;
   padding-right: 3.5rem;
 }

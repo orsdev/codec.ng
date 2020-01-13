@@ -94,6 +94,10 @@
     width: 100%;
   }
 
+  .mobile-nav {
+   display: block;
+  }
+
   .sidebar {
     display: none;
   }
@@ -110,4 +114,22 @@
     width: 100vw !important;
     padding: 0 2rem !important;
   }
+
+  .footer {
+   .lang {
+   position: absolute;
+   top: 5px;
+   right: 10px;
+   }
+  }
+}
+
+@media (max-width: 566px) {
+ .footer {
+  display: inline-block;
+  ul {
+    width: 100%;
+    justify-content: center;
+  }
+ }
 }

@@ -32,178 +32,286 @@
 
 <body>
  <div class="wrapper">
- <!-- SIDE BAR -->
- <section class="sidebar" id="sidebar">
-  <nav class="sidebar__nav">
-
-     <ul class="sidebar__nav-list">
-      <li class="list-item list-logo">
-       <a href="#"> <img src="./img/codaclogo.png" alt="codac logo">
-       </a></li>
-      <li class="list-item active-list">
-       <a href="#">
-        <i class="fa fa-play-circle-o"></i>
-        Courses
-       </a></li>
-      <li class="list-item">
-       <a href="#">
-        <i class="fas fa-comment-dots"></i>
-        Communication
-       </a></li>
-      <li class="list-item">
-       <a href="#">
-        <i class="fas fa-chart-bar"></i>
-        Performance
-       </a></li>
-      <li class="list-item">
-       <a href="#">
-        <i class="fa fa-wrench"></i>
+  <!-- SIDE BAR -->
+  <section class="sidebar" id="sidebar">
+   <nav class="sidebar__nav">
+    <ul class="sidebar__nav-list">
+     <li class="list-item list-logo">
+      <a href="#"> <img src="./img/codaclogo.png" alt="codac logo">
+      </a></li>
+     <li class="list-item active-list">
+      <a href="#">
+       <i class="fa fa-play-circle-o"></i>
+       Courses
+      </a></li>
+     <li class="list-item">
+      <a href="#">
+       <i class="fas fa-comment-dots"></i>
+       Communication
+      </a></li>
+     <li class="list-item">
+      <a href="#">
+       <i class="fas fa-chart-bar"></i>
+       Performance
+      </a></li>
+     <li class="list-item">
+      <a href="#">
+       <i class="fa fa-wrench"></i>
        Tools
-       </a></li>
-      <li class="list-item">
-       <a href="#">
-        <i class="fa fa-question-circle-o"></i>
+      </a></li>
+     <li class="list-item">
+      <a href="#">
+       <i class="fa fa-question-circle-o"></i>
        Resourses
-       </a></li>
-     </ul>
-  </nav>
- </section>
+      </a></li>
+    </ul>
+   </nav>
+  </section>
 
- <div class="divider"></div>
- <!-- USER SECTION -->
-<main>
- <section class="user" id="user">
-  <span class="user__role">Student</span>
-  <span class="user__notify">
-   <i class="fa fa-bell-o" aria-hidden="true"></i>
-  </span>
-  <div class="user__name">
-   <span class="user__initials">OO</span></div>
- </section>
+  <!-- MOBILE NAV -->
+  <section class="mobile-nav">
+   <div class="mobile-nav__bg">
+    <span class="mobile-nav__toggle">
+     <i class="fa fa-bars mobile-open" aria-hidden="true"></i>
+    </span>
+   </div>
+  </section>
 
- <!-- CREATE COURSE -->
- <section class="createcourse mt-4" id="createcourse">
-  <div class="createcourse__container box-shadow">
-   <span class="createcourse__text">
-    <i class="fa fa-sticky-note-o text-primary mr-4" aria-hidden="true"></i>
-    <h3>Jump Into Course Creation</h3>
-   </span>
-   <a href="#">
-    <button class="btn btn-lg btn-danger createcourse__button">Create Your Course</button>
-   </a>
-  </div>
- </section>
+  <!-- MOBILE SIDEBAR -->
+  <section class="mobile__sidebar">
+   <div class="mobile__sidebar-bg">
+    <div class="mobile__sidebar-user">
+     <span class="username">OO</span>
+     <div class="greet">
+      <h4>H1, <span class="name">Olamide Odore</span></h4>
+      <p>Welcome back</p>
+     </div>
+    </div>
+    <ul class="mobile__sidebar-list list-group">
+     <li class="list-group-item">
+      <a href="#">Switch to student view</a>
+     </li>
+     <li class="list-group-item">
+      <a href="#">Course</a>
+     </li>
+     <li class="list-group-item">
+      <a href="#">Notification</a>
+      <span class="badge badge-danger">3</span>
+     </li>
+     <li class="list-group-item">
+      <a href="#">Log out</a>
+     </li>
+    </ul>
+   </div>
+  </section>
 
- <div class="info marginbt" id="info">
-  <h3>Based on your experience, we think these resources will be helpful.</h3>
- </div>
+  <div class="divider"></div>
+  <!-- USER SECTION -->
+  <main>
+   <section class="user" id="user">
+    <span class="user__role">Student</span>
+    <span class="user__notify">
 
- <!-- ENGAGING SECTION -->
- <section class="engaging box-shadow" id="engaging">
-  <span class="engaging__img">
-   <img src="/img/laptop.png" alt="laptop">
-  </span>
-  <div class="engaging__body">
-   <h4 class="opacify">Create an Engaging Course</h4>
-   <p class="mt-4 opacify">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eius ut consequatur! Voluptates ducimus repudiandae tempora, consectetur quo nulla voluptate aperiam quod, repellendus dignissimos voluptatem ad dolore? Atque, numquam odit.
-   </p>
-   <a href="#" class="class mt-5">Get Started</a>
-  </div>
- </section>
+     <div class="dropright">
+      <i class="fa fa-bell-o" aria-hidden="true" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+       aria-expanded="false"></i>
 
- <!-- AUDIENCE & VIDEO -->
-<section class="video mt-4" id="video">
-<div class="video__start">
- <span class="video__img">
-  <img src="img/video.png" alt="video"></span>
- <div class="video__body">
-  <h5 class="opacify">Get Started with Video</h5>
-  <p class="mt-4 opacify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-   <a href="#" class=" d-block mt-3">Get Started</a>
-  </p>
- </div>
-</div>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+       <a class="dropdown-item" href="#">Action</a>
+       <a class="dropdown-item" href="#">Another action</a>
+       <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+     </div>
 
-<div class="video__audience">
- <span class="video__img">
-  <img src="img/chat.png" alt="video">
-  </span>
- <div class="video__body">
-  <h5 class="opacify">Build Your Audience</h5>
-  <p class="mt-4 opacify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-   <a href="#" class="mt-3 d-block">Get Started</a>
-  </p>
- </div>
-</div>
-</section>
+    </span>
+    <div class="user__name">
+     <div class="dropright">
+      <span class="user__initials" aria-hidden="true" id="dropdownButton" data-toggle="dropdown" aria-haspopup="true"
+       aria-expanded="false">OO</span>
+      <div class="dropdown-menu" aria-labelledby="dropdownButton">
+       <li class="list-group-item">
+        <a href="#">Public Profile</a>
+       </li>
+       <li class="list-group-item">
+        <a href="#">Account</a>
+       </li>
+       <li class="list-group-item">
+        <a href="#">Notification</a>
+        <span class="badge badge-danger">3</span>
+       </li>
+       <li class="list-group-item">
+        <a href="#">Payout Settings</a>
+       </li>
+       <li class="list-group-item">
+        <a href="#">Log out</a>
+       </li>
+      </div>
+     </div>
+   </section>
 
-<!-- NEWCOMER SECTION -->
-<section class="newcomer box-shadow mt-5 py-3" id="newcomer">
- <span class="newcomer__img">
-  <img src="/img/stopwatch.png" alt="laptop">
- </span>
- <div class="newcomer__body">
-  <h4 class="opacify">Join the Newcomer Challenge!</h4>
-  <p class="mt-4 opacify">
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eius ut consequatur! Voluptates ducimus repudiandae tempora, consectetur quo nulla voluptate aperiam quod, repellendus dignissimos voluptatem ad dolore? Atque, numquam odit.
-  </p>
-  <a href="#" class="class mt-5">Get Started</a>
- </div>
-</section>
+   <!-- CREATE COURSE -->
+   <section class="createcourse mt-4" id="createcourse">
+    <div class="createcourse__container box-shadow">
+     <span class="createcourse__text">
+      <i class="fa fa-sticky-note-o text-primary mr-4" aria-hidden="true"></i>
+      <h3>Jump Into Course Creation</h3>
+     </span>
+     <a href="#">
+      <button class="btn btn-lg btn-danger createcourse__button">Create Your Course</button>
+     </a>
+    </div>
+   </section>
 
-<!-- RESOURCES SECTION -->
-<section class="resources marginbt" id="resources">
- <h3 class="opacify text-center">Have questions? Here are our most popular instructor resources.</h3>
+   <div class="info marginbt" id="info">
+    <h3>Based on your experience, we think these resources will be helpful.</h3>
+   </div>
 
- <ul class="resources__items mt-5">
-  <li><a href="#">
-   <i class="fa fa-play-circle-o mb-2" aria-hidden="true"></i>
-   <h6>Test Video</h6>
-   <p class="resources__items-text mt-3">
-    Send us a sample video and get expert feedback.
-   </p>
-  </a></li>
-  <li><a href="#">
-   <i class="fa fa-thumbs-up  mb-2" aria-hidden="true"></i>
-   <h6>Codac Community</h6>
-   <p class="resources__items-text mt-3">
-    Ask experienced instructors for advice, or browse answers.
-   </p>
-  </a></li>
-  <li><a href="#">
-   <i class="fa fa-book mb-2" aria-hidden="true"></i>
-   <h6>Teaching Center</h6>
-   <p class="resources__items-text mt-3">
-    Learn about best practices for teaching on Udemy.
-   </p>
-  </a></li>
-  <li><a href="#">
-   <i class="fa fa-apple mb-2" aria-hidden="true"></i>
-   <h6>Insight Courses</h6>
-   <p class="resources__items-text mt-3">
-    Get guided by video courses for Udemy instructors.
-   </p>
-  </a></li>
-  <li><a href="#">
-   <i class="fa fa-smile-o mb-2" aria-hidden="true"></i>
-   <h6>Help and Support</h6>
-   <p class="resources__items-text mt-3">
-    Browse our Help Center or contact our support team.
-   </p>
-  </a></li>
- </ul>
+   <!-- ENGAGING SECTION -->
+   <section class="engaging box-shadow" id="engaging">
+    <span class="engaging__img">
+     <img src="/img/laptop.png" alt="laptop">
+    </span>
+    <div class="engaging__body">
+     <h4 class="opacify">Create an Engaging Course</h4>
+     <p class="mt-4 opacify">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eius ut consequatur! Voluptates ducimus
+      repudiandae tempora, consectetur quo nulla voluptate aperiam quod, repellendus dignissimos voluptatem ad dolore?
+      Atque, numquam odit.
+     </p>
+     <a href="#" class="class mt-5">Get Started</a>
+    </div>
+   </section>
 
-</section>
+   <!-- AUDIENCE & VIDEO -->
+   <section class="video mt-4" id="video">
+    <div class="video__start">
+     <span class="video__img">
+      <img src="img/video.png" alt="video"></span>
+     <div class="video__body">
+      <h5 class="opacify">Get Started with Video</h5>
+      <p class="mt-4 opacify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       <a href="#" class=" d-block mt-3">Get Started</a>
+      </p>
+     </div>
+    </div>
 
-<!-- READY SECTION -->
-<section class="ready text-center" id="ready">
- <h4 class="opacify">Are You Ready To Begin?</h4>
- <button class="btn btn-danger btn-lg ready__button mt-4">Create Your Course</button>
-</section>
-  
- </main>
+    <div class="video__audience">
+     <span class="video__img">
+      <img src="img/chat.png" alt="video">
+     </span>
+     <div class="video__body">
+      <h5 class="opacify">Build Your Audience</h5>
+      <p class="mt-4 opacify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+       <a href="#" class="mt-3 d-block">Get Started</a>
+      </p>
+     </div>
+    </div>
+   </section>
+
+   <!-- NEWCOMER SECTION -->
+   <section class="newcomer box-shadow mt-5 py-3" id="newcomer">
+    <span class="newcomer__img">
+     <img src="/img/stopwatch.png" alt="laptop">
+    </span>
+    <div class="newcomer__body">
+     <h4 class="opacify">Join the Newcomer Challenge!</h4>
+     <p class="mt-4 opacify">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eius ut consequatur! Voluptates ducimus
+      repudiandae tempora, consectetur quo nulla voluptate aperiam quod, repellendus dignissimos voluptatem ad dolore?
+      Atque, numquam odit.
+     </p>
+     <a href="#" class="class mt-5">Get Started</a>
+    </div>
+   </section>
+
+   <!-- RESOURCES SECTION -->
+   <section class="resources marginbt" id="resources">
+    <h3 class="opacify text-center">Have questions? Here are our most popular instructor resources.</h3>
+
+    <ul class="resources__items mt-5">
+     <li><a href="#">
+       <i class="fa fa-play-circle-o mb-2" aria-hidden="true"></i>
+       <h6>Test Video</h6>
+       <p class="resources__items-text mt-3">
+        Send us a sample video and get expert feedback.
+       </p>
+      </a></li>
+     <li><a href="#">
+       <i class="fa fa-thumbs-up  mb-2" aria-hidden="true"></i>
+       <h6>Codac Community</h6>
+       <p class="resources__items-text mt-3">
+        Ask experienced instructors for advice, or browse answers.
+       </p>
+      </a></li>
+     <li><a href="#">
+       <i class="fa fa-book mb-2" aria-hidden="true"></i>
+       <h6>Teaching Center</h6>
+       <p class="resources__items-text mt-3">
+        Learn about best practices for teaching on Udemy.
+       </p>
+      </a></li>
+     <li><a href="#">
+       <i class="fa fa-apple mb-2" aria-hidden="true"></i>
+       <h6>Insight Courses</h6>
+       <p class="resources__items-text mt-3">
+        Get guided by video courses for Udemy instructors.
+       </p>
+      </a></li>
+     <li><a href="#">
+       <i class="fa fa-smile-o mb-2" aria-hidden="true"></i>
+       <h6>Help and Support</h6>
+       <p class="resources__items-text mt-3">
+        Browse our Help Center or contact our support team.
+       </p>
+      </a></li>
+    </ul>
+
+   </section>
+
+   <!-- READY SECTION -->
+   <section class="ready text-center" id="ready">
+    <h4 class="opacify">Are You Ready To Begin?</h4>
+    <button class="btn btn-danger btn-lg ready__button mt-4">Create Your Course</button>
+   </section>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer" id="footer">
+   <div class="footer__copyright">
+    <span class="logo"><a href="index.html"><img src="img/codaclogo.png" alt=""></a></span>
+    <span class="ml-3 opacify">Copyright &copy; 2020 Codec, Inc.</span>
+   </div>
+   <ul class="copyright__links">
+    <li class="mr-3"><a href="#">Terms</a></li>
+    <li><a href="#">Privacy Policy and Cookie Policy</a></li>
+   </ul>
+
+   <div class="lang dropup opacify">
+    <i class="fas fa-globe" id="dropdownlanguage" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false"></i>
+    <span aria-hidden="true" id="dropdownlanguage" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false"><strong>English</strong></span>
+    <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownlanguage">
+     <li class="list-group-item">
+      <a href="#">French</a>
+     </li>
+     <li class="list-group-item">
+      <a href="#">Deutsch</a>
+     </li>
+     <li class="list-group-item">
+      <a href="#">Italiano</a>
+     </li>
+    </div>
+   </div>
+  </footer>
  </div>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="js/dashboard.js"></script>
+
 </html>
