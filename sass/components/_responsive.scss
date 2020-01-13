@@ -2,6 +2,16 @@
   .createcourse {
     &__container {
       flex-direction: column;
+      text-align: center;
+
+      .fa {
+       display: block;
+       margin-bottom: 20px;
+      }
+    }
+
+    &__text {
+     display: block;
     }
 
     &__button { 
@@ -19,7 +29,9 @@
 
   .engaging {
     flex-direction: column;
-    padding: 0.8rem 0.6rem;
+   &__body{
+     padding: 10px 30px;
+   }
   }
 
   .video {
@@ -27,6 +39,8 @@
 
     &__img {
       flex: 0 0 100%;
+      text-align: center;
+      margin: auto;
     }
 
     img {
@@ -36,16 +50,25 @@
 
     &__audience {
       flex-direction: column;
+      align-items: flex-start;
     }
 
     &__start {
       flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__body {
+     padding: 10px 30px;
     }
   }
 
   .newcomer {
-   padding: 0.8rem 0.6rem;
     grid-template-columns: 1fr;
+
+    &__body {
+     padding: 10px 30px;
+    }
   }
 }
 
