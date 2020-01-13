@@ -4,7 +4,7 @@
       flex-direction: column;
     }
 
-    &__button {
+    &__button { 
       margin-top: 0.9rem;
     }
 
@@ -79,7 +79,12 @@
     display: none;
   }
 
+  .user {
+   display: none !important;
+  }
+
   main {
     width: 100vw !important;
+    padding: 0 2rem !important;
   }
 }

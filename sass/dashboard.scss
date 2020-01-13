@@ -3,8 +3,9 @@
 @import "components/engaging";
 @import "components/videoaudience";
 @import "components/newcomer";
+@import "components/resources";
 @import "components/responsive";
-
+ 
 *,
 *::before,
 *::after {
@@ -83,4 +84,12 @@ main {
 
 p {
  font-size: 1.1rem;
+}
+
+.box-shadow {
+   box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+
+   &:hover {
+       box-shadow: 0 4px 16px rgba(20, 23, 28, .25);
+   }
 }
