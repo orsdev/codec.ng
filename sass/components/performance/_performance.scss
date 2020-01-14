@@ -1,0 +1,96 @@
+.performance {
+ position: relative;
+ display: flex;
+ width: 99%;
+
+ h5 {
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+  &:hover {
+   transition: .1s;
+   font-size: 1.2rem;
+   -webkit-transition: .1s;
+   -moz-transition: .1s;
+   -ms-transition: .1s;
+   -o-transition: .1s;
+}
+ }
+
+ &__sidebar {
+  background-color: rgb(237, 236, 230);
+  width: 250px;
+  padding: 1.5rem 2rem;
+  padding-top: 40px;
+  position: fixed;
+  height: 100vh;
+ }
+
+}
+
+.overview {
+ &__dashboard {
+  position: relative;
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  align-self: center;
+  // height: 100vh;
+  padding: 30px;
+  margin-top: 400px;
+  margin-bottom: 200px;
+  cursor: pointer;
+
+  p{
+   width: 300px;
+   margin: auto;
+  }
+ }
+
+ &__data {
+  margin-top: 30px;
+
+  &-header {
+   display: flex;
+   align-items: center;
+   padding: 10px;
+  }
+ }
+}
+
+.revenue,
+.enrollment,
+.rating {
+ padding: 20px;
+ width: 170px;
+}
+
+.overview__display {
+ position: relative;
+ padding: 150px 0;
+ border-top: 1px solid grey;
+ border-bottom: 1px solid grey;
+
+ &-range {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: .9rem;
+  width: 220px;
+ }
+
+ .range {
+  outline: 1px solid #007791;;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  padding: .1rem .7rem;
+  width: 130px;
+  margin-left: 10px;
+  color: #007791;
+  font-weight: bold;
+ }
+}

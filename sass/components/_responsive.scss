@@ -70,6 +70,7 @@
      padding: 10px 30px;
     }
   }
+
 }
 
 @media (min-width: 900px) and (max-width: 1100px) {
@@ -96,6 +97,7 @@
 
   .mobile-nav {
    display: block;
+   width: 100vw;
   }
 
   .sidebar {
@@ -116,10 +118,22 @@
   }
 
   .footer {
+   position: absolute;
+ 
    .lang {
    position: absolute;
    top: 5px;
    right: 10px;
+   }
+  }
+
+  .communication {
+   &__sidebar {
+    display: none;
+   }
+
+   &__dashboard {
+    width: 100%;
    }
   }
 }

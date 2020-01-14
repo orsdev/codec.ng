@@ -4,10 +4,11 @@
   left: 0;
   width: 50px;
   overflow-x: hidden;
-  height: 100vh;
-  z-index: 160;
+  height: 100%;
+  z-index: 200;
   background: #52143e;
   transition: .4s;
+  overflow-y: hidden;
  
   &:hover {
    width: 260px;

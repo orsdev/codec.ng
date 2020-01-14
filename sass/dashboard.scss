@@ -1,10 +1,17 @@
-@import "components/createcourse";
+@import "components/utilities";
+@import "components/user";
 @import "components/sidebar";
-@import "components/engaging";
-@import "components/videoaudience";
-@import "components/newcomer";
-@import "components/resources";
-@import "components/ready";
+
+@import "components/courses/createcourse";
+@import "components/courses/engaging";
+@import "components/courses/videoaudience";
+@import "components/courses/newcomer";
+@import "components/courses/resources";
+@import "components/courses/ready";
+
+@import "components/communication/communication";
+@import "components/performance/performance";
+
 @import "components/footer";
 @import "components/mobilenav";
 @import "components/responsive";
@@ -30,78 +37,36 @@ body {
   position: relative;
 }
 
-.user {
- position: relative;
- z-index: 10000;
-  padding: 0.8rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
-  span {
-    padding: 0.4rem 0.5rem;
-    font-weight: normal;
-    cursor: pointer;
-
-    .fa {
-      font-size: 1.5rem;
-    }
-  }
-
-  &__name {
-    color: white;
-    margin-left: 13px;
-    margin-right: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    background-color: grey;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-
-    li {
-     border: none;
-     outline: none;
-    }
-  }
-}
-
 .wrapper {
+ width: 100%;
   position: relative;
   display: grid;
   grid-template-columns: 50px 1fr;
-  gap: 20px;
+  gap: 4px;
 }
 
 main {
   position: relative;
-  z-index: 150;
+  z-index: 100;
+  width: 99%;
+  margin: auto;
   padding: 0 2rem;
   padding-right: 3.5rem;
+  // outline: 2px solid red;
 }
 
-.opacify {
- opacity: .8;
+.courses {
+ padding-top: 80px;
+ display: none;
 }
 
-.marginbt {
- margin-top: 55px;
- margin-bottom: 55px;
+.communication {
+ height: 100vh;
+ padding: 0;
+ display: none;
 }
 
-p {
- font-size: 1.1rem;
-}
-
-.box-shadow {
-   box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
-
-   &:hover {
-       box-shadow: 0 4px 16px rgba(20, 23, 28, .25);
-   }
+.performance {
+ height: 100vh;
+ padding: 0;
 }

@@ -31,6 +31,47 @@
 </head>
 
 <body>
+ <section class="user" id="user">
+  <span class="user__role">Student</span>
+  <span class="user__notify">
+
+   <div class="dropright">
+    <i class="fa fa-bell-o" aria-hidden="true" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+     aria-expanded="false"></i>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+     <a class="dropdown-item" href="#">Action</a>
+     <a class="dropdown-item" href="#">Another action</a>
+     <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+   </div>
+
+  </span>
+  <div class="user__name">
+   <div class="dropright">
+    <span class="user__initials" aria-hidden="true" id="dropdownButton" data-toggle="dropdown" aria-haspopup="true"
+     aria-expanded="false">OO</span>
+    <div class="dropdown-menu" aria-labelledby="dropdownButton">
+     <li class="list-group-item">
+      <a href="#">Public Profile</a>
+     </li>
+     <li class="list-group-item">
+      <a href="#">Account</a>
+     </li>
+     <li class="list-group-item">
+      <a href="#">Notification</a>
+      <span class="badge badge-danger">3</span>
+     </li>
+     <li class="list-group-item">
+      <a href="#">Payout Settings</a>
+     </li>
+     <li class="list-group-item">
+      <a href="#">Log out</a>
+     </li>
+    </div>
+   </div>
+ </section>
+
  <div class="wrapper">
   <!-- SIDE BAR -->
   <section class="sidebar" id="sidebar">
@@ -39,27 +80,27 @@
      <li class="list-item list-logo">
       <a href="#"> <img src="img/codaclogo.png" alt="codac logo">
       </a></li>
-     <li class="list-item active-list">
-      <a href="#">
-       <i class="fa fa-play-circle-o"></i>
+     <li class="list-item active-list show-courses courses-active">
+      <a href="#" class="show-courses">
+       <i class="fa fa-play-circle-o show-courses"></i>
        Courses
       </a></li>
-     <li class="list-item">
-      <a href="#">
-       <i class="fas fa-comment-dots"></i>
+     <li class="list-item show-comms comms-active">
+      <a href="#" class="show-comms">
+       <i class="fas fa-comment-dots show-comms"></i>
        Communication
       </a></li>
-     <li class="list-item">
+     <li class="list-item show-performance">
       <a href="#">
        <i class="fas fa-chart-bar"></i>
        Performance
       </a></li>
-     <li class="list-item">
+     <li class="list-item show-tools">
       <a href="#">
        <i class="fa fa-wrench"></i>
        Tools
       </a></li>
-     <li class="list-item">
+     <li class="list-item show-resource">
       <a href="#">
        <i class="fa fa-question-circle-o"></i>
        Resourses
@@ -107,48 +148,9 @@
 
   <div class="divider"></div>
   <!-- USER SECTION -->
-  <main>
-   <section class="user" id="user">
-    <span class="user__role">Student</span>
-    <span class="user__notify">
 
-     <div class="dropright">
-      <i class="fa fa-bell-o" aria-hidden="true" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-       aria-expanded="false"></i>
-
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-       <a class="dropdown-item" href="#">Action</a>
-       <a class="dropdown-item" href="#">Another action</a>
-       <a class="dropdown-item" href="#">Something else here</a>
-      </div>
-     </div>
-
-    </span>
-    <div class="user__name">
-     <div class="dropright">
-      <span class="user__initials" aria-hidden="true" id="dropdownButton" data-toggle="dropdown" aria-haspopup="true"
-       aria-expanded="false">OO</span>
-      <div class="dropdown-menu" aria-labelledby="dropdownButton">
-       <li class="list-group-item">
-        <a href="#">Public Profile</a>
-       </li>
-       <li class="list-group-item">
-        <a href="#">Account</a>
-       </li>
-       <li class="list-group-item">
-        <a href="#">Notification</a>
-        <span class="badge badge-danger">3</span>
-       </li>
-       <li class="list-group-item">
-        <a href="#">Payout Settings</a>
-       </li>
-       <li class="list-group-item">
-        <a href="#">Log out</a>
-       </li>
-      </div>
-     </div>
-   </section>
-
+  <main class="courses">
+   
    <!-- CREATE COURSE -->
    <section class="createcourse mt-4" id="createcourse">
     <div class="createcourse__container box-shadow">
@@ -273,6 +275,86 @@
     <h4 class="opacify">Are You Ready To Begin?</h4>
     <button class="btn btn-danger btn-lg ready__button mt-4">Create Your Course</button>
    </section>
+  </main>
+
+  <!-- COMMUNICATION PAGE -->
+  <main class="communication">
+   <div class="communication__sidebar">
+    <h5 class="q&a font-weight-bold">Q&A</h5>
+    <h5>Message <span class="badge badge-danger notification">6</span> </h5>
+    <h5>Assignments</h5>
+    <h5>Announcements</h5>
+   </div>
+   
+   <div class="communication__dashboard">
+    <h2 class="mb-5 text-left pl-4">Q&A</h2>
+    <h5 class="opacify">No questions Yet</h5>
+    <p class="mt-3 opacify">
+     Q&A is a forum where your students can ask questions, hear your responses, and respond to one another. Here’s where you’ll see your courses’ Q&A threads
+    </p>
+   </div>
+  </main>
+
+  <!-- PERFORMANCE PAGE -->
+  <main class="performance">
+   <div class="performance__sidebar">
+    <h5 class="overview font-weight-bold">Overview</h5>
+    <h5>Student</h5>
+    <h5>Reviews</h5>
+    <h5>Course engagement</h5>
+    <h5>Traffic & conversion</h5>
+   </div>
+
+   <div class="overview__dashboard">
+    <h1 class="mb-5 text-left">Overview</h1>
+    <h4 class="mt-3 opacify">
+     Get top insights about your performance
+    </h4>
+     
+    <div class="overview__data box-shadow">
+     <div class="overview__data-header">
+        <div class="revenue">
+         <span class="revenue__total ovr-small">Total revenue</span>
+         <p class="revenue__price ovr-big">
+          $0.00
+         </p>
+         <span class="revenue__month ovr-medium">
+          $0.00 this month
+         </span>
+        </div>
+        <div class="enrollment">
+         <span class="enrollment__total ovr-small">Total enrollments</span>
+         <p class="enrollment__num ovr-big">
+          0
+         </p>
+         <span class="enrollment__total ovr-medium">
+          0 this month
+         </span>
+        </div>
+        <div class="rating">
+         <span class="rating__text ovr-small">Instructor rating</span>
+         <p class="rating__num ovr-big">
+          0.00
+         </p>
+         <span class="rating__total ovr-medium">
+          0 ratings this month
+         </span>
+        </div>
+     </div>
+
+     <div class="overview__display">
+      <div class="overview__display-range">
+       Date range: <span class="range">Last 12 months 
+        <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+      </div>
+      <div class="overview__display-table">
+       <p>No data to display</p>;
+      </div>
+     </div>
+    
+    </div>
+    <span class="report"> <a href="#">Revenue Report</a> </span>
+   </div>
   </main>
 
   <!-- FOOTER SECTION -->
