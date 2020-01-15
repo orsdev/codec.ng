@@ -80,9 +80,16 @@ main {
  -moz-border-radius: 0;
  -ms-border-radius: 0;
  -o-border-radius: 0;
+ color: white;
 
  &:hover {
   background: lighten(#317036 , 5%);
   border: 1px solid #317036;
+  color: white;
  }
+}
+
+.get-started {
+  width: 100px;
+  font-size: 1.1rem;
 }
