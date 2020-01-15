@@ -26,130 +26,162 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
- <link rel="stylesheet" href="newcss/dashboard.css">
- <title>Codec | DASHBOARD</title>
+ <link rel="stylesheet" href="css/dashboard.css">
+ <title>Codac | DASHBOARD</title>
 </head>
 
 <body>
- <section class="user" id="user">
-  <span class="user__role">Student</span>
-  <span class="user__notify">
 
-   <div class="dropright">
-    <i class="fa fa-bell-o" aria-hidden="true" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-     aria-expanded="false"></i>
-
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-     <a class="dropdown-item" href="#">Action</a>
-     <a class="dropdown-item" href="#">Another action</a>
-     <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-   </div>
-
-  </span>
-  <div class="user__name">
-   <div class="dropright">
-    <span class="user__initials" aria-hidden="true" id="dropdownButton" data-toggle="dropdown" aria-haspopup="true"
-     aria-expanded="false">OO</span>
-    <div class="dropdown-menu" aria-labelledby="dropdownButton">
-     <li class="list-group-item">
-      <a href="#">Public Profile</a>
-     </li>
-     <li class="list-group-item">
-      <a href="#">Account</a>
-     </li>
-     <li class="list-group-item">
-      <a href="#">Notification</a>
-      <span class="badge badge-danger">3</span>
-     </li>
-     <li class="list-group-item">
-      <a href="#">Payout Settings</a>
-     </li>
-     <li class="list-group-item">
-      <a href="#">Log out</a>
-     </li>
-    </div>
-   </div>
+ <!-- MOBILE NAV -->
+ <section class="mobile-nav">
+  <div class="mobile-nav__bg">
+   <span class="mobile-nav__toggle">
+    <i class="fa fa-bars mobile-open" aria-hidden="true"></i>
+   </span>
+  </div>
  </section>
 
+   <!-- MOBILE SIDEBAR -->
+   <section class="mobile__sidebar">
+    <div class="mobile__sidebar-bg">
+     <div class="mobile__sidebar-user">
+      <span class="username">OO</span>
+      <div class="greet">
+       <h4>Hi, <span class="name">Olamide Odore</span></h4>
+       <p>Welcome back</p>
+      </div>
+     </div>
+   
+     <ul class="mobile__sidebar-list list-group">
+  
+      <li class="list-item show-courses list-group-item">
+       <a href="#" class="show-courses">
+        Courses
+       </a></li>
+
+      <li class="list-item show-comms list-group-item">
+       <a href="#" class="show-comms">
+        Communication
+       </a></li>
+      <li class="list-item show-perf list-group-item">
+       <a href="#" class="show-perf">
+        Performance
+       </a></li>
+      <li class="list-item show-tools list-group-item">
+       <a href="#" class="show-tools">
+        Tools
+       </a></li>
+      <li class="list-item show-resource list-group-item">
+       <a href="#" class="show-resource">
+        Resources
+       </a></li>
+     </ul>
+
+     <div class="list-group">
+      <li class="list-group-item">
+       <a href="#">Notification</a>
+       <span class="badge badge-danger">3</span>
+      </li>
+      <li class="list-group-item">
+       <a href="#">Log out</a>
+      </li>
+     </div>
+    
+    </div>
+   </section>
+
  <div class="wrapper">
-  <!-- SIDE BAR -->
-  <section class="sidebar" id="sidebar">
-   <nav class="sidebar__nav">
-    <ul class="sidebar__nav-list">
-     <li class="list-item list-logo">
-      <a href="#"> <img src="img/codaclogo.png" alt="codac logo">
-      </a></li>
-     <li class="list-item active-list show-courses courses-active">
-      <a href="#" class="show-courses">
-       <i class="fa fa-play-circle-o show-courses"></i>
-       Courses
-      </a></li>
-     <li class="list-item show-comms comms-active">
-      <a href="#" class="show-comms">
-       <i class="fas fa-comment-dots show-comms"></i>
-       Communication
-      </a></li>
-     <li class="list-item show-performance">
-      <a href="#">
-       <i class="fas fa-chart-bar"></i>
-       Performance
-      </a></li>
-     <li class="list-item show-tools">
-      <a href="#">
-       <i class="fa fa-wrench"></i>
-       Tools
-      </a></li>
-     <li class="list-item show-resource">
-      <a href="#">
-       <i class="fa fa-question-circle-o"></i>
-       Resourses
-      </a></li>
-    </ul>
-   </nav>
-  </section>
+  <section class="sidebar-container">
+   <div class="user" id="user">
+    <span class="user__role">Student</span>
+    <span class="user__notify">
 
-  <!-- MOBILE NAV -->
-  <section class="mobile-nav">
-   <div class="mobile-nav__bg">
-    <span class="mobile-nav__toggle">
-     <i class="fa fa-bars mobile-open" aria-hidden="true"></i>
+     <div class="dropright">
+      <i class="fa fa-bell-o" aria-hidden="true" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+       aria-expanded="false"></i>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+       <a class="dropdown-item" href="#">Action</a>
+       <a class="dropdown-item" href="#">Another action</a>
+       <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+     </div>
     </span>
-   </div>
-  </section>
-
-  <!-- MOBILE SIDEBAR -->
-  <section class="mobile__sidebar">
-   <div class="mobile__sidebar-bg">
-    <div class="mobile__sidebar-user">
-     <span class="username">OO</span>
-     <div class="greet">
-      <h4>Hi, <span class="name">Olamide Odore</span></h4>
-      <p>Welcome back</p>
+    <div class="user__name">
+     <div class="dropright">
+      <span class="user__initials" aria-hidden="true" id="dropdownButton" data-toggle="dropdown" aria-haspopup="true"
+       aria-expanded="false">OO</span>
+      <div class="dropdown-menu" aria-labelledby="dropdownButton">
+       <li class="list-group-item">
+        <a href="#">Public Profile</a>
+       </li>
+       <li class="list-group-item">
+        <a href="#">Account</a>
+       </li>
+       <li class="list-group-item">
+        <a href="#">Notification</a>
+        <span class="badge badge-danger">3</span>
+       </li>
+       <li class="list-group-item">
+        <a href="#">Payout Settings</a>
+       </li>
+       <li class="list-group-item">
+        <a href="#">Log out</a>
+       </li>
+      </div>
      </div>
     </div>
-    <ul class="mobile__sidebar-list list-group">
-     <li class="list-group-item">
-      <a href="#">Switch to student view</a>
-     </li>
-     <li class="list-group-item">
-      <a href="#">Course</a>
-     </li>
-     <li class="list-group-item">
-      <a href="#">Notification</a>
-      <span class="badge badge-danger">3</span>
-     </li>
-     <li class="list-group-item">
-      <a href="#">Log out</a>
-     </li>
-    </ul>
+   </div>
+
+   <div class="sidebar">
+    <nav class="sidebar__nav">
+     <ul class="sidebar__nav-list">
+      <li class="list-item list-logo">
+       <a href="#"> <img src="img/codaclogo.png" alt="codac logo">
+       </a></li>
+
+      <li class="list-item show-courses active-list courseBorder">
+       <a href="#" class="show-courses">
+        <i class="fas fa-play show-courses"></i>
+        Courses
+       </a></li>
+
+      <li class="list-item show-comms commsBorder">
+       <a href="#" class="show-comms">
+        <i class="fas fa-comment-dots show-comms"></i>
+        Communication
+       </a></li>
+      <li class="list-item show-perf showBorder">
+       <a href="#" class="show-perf">
+        <i class="fas fa-chart-bar show-perf"></i>
+        Performance
+       </a></li>
+      <li class="list-item show-tools toolsBorder">
+       <a href="#" class="show-tools">
+        <i class="fa fa-wrench show-tools"></i>
+        Tools
+       </a></li>
+      <li class="list-item show-resource resourceBorder">
+       <a href="#" class="show-resource">
+        <i class="fa fa-question-circle-o show-resource"></i>
+        Resources
+       </a></li>
+     </ul>
+    </nav>
+    <div class="overview hide">
+     <h5 class="overview__header header font-weight-bold">Overview</h5>
+    </div>
+
+    <div class="communicate hide">
+     <h5 class="q&a font-weight-bold pt-5 pl-4">Q&A</h5>
+     <h5 class="pl-4">Message <span class="badge badge-danger notification">6</span> </h5>
+    </div>
+
    </div>
   </section>
 
-  <div class="divider"></div>
-  <!-- USER SECTION -->
-
-  <main class="courses">
+  <!-- COURSES PAGE -->
+  <main class="courses hide show">
    
    <!-- CREATE COURSE -->
    <section class="createcourse mt-4" id="createcourse">
@@ -159,7 +191,7 @@
       <h3>Jump Into Course Creation</h3>
      </span>
      <a href="#">
-      <button class="btn btn-lg btn-danger createcourse__button">Create Your Course</button>
+      <button class="btn btn-lg btn-danger btn__button">Create Your Course</button>
      </a>
     </div>
    </section>
@@ -273,122 +305,172 @@
    <!-- READY SECTION -->
    <section class="ready text-center" id="ready">
     <h4 class="opacify">Are You Ready To Begin?</h4>
-    <button class="btn btn-danger btn-lg ready__button mt-4">Create Your Course</button>
+    <button class="btn btn-danger btn-lg btn__button mt-4">Create Your Course</button>
    </section>
   </main>
 
-  <!-- COMMUNICATION PAGE -->
-  <main class="communication">
-   <div class="communication__sidebar">
-    <h5 class="q&a font-weight-bold">Q&A</h5>
-    <h5>Message <span class="badge badge-danger notification">6</span> </h5>
-    <h5>Assignments</h5>
-    <h5>Announcements</h5>
-   </div>
-   
-   <div class="communication__dashboard">
-    <h2 class="mb-5 text-left pl-4">Q&A</h2>
-    <h5 class="opacify">No questions Yet</h5>
-    <p class="mt-3 opacify">
-     Q&A is a forum where your students can ask questions, hear your responses, and respond to one another. Here’s where you’ll see your courses’ Q&A threads
-    </p>
-   </div>
-  </main>
+    <!-- COMMUNICATION PAGE -->
+    <main class="communication hide">
+     
+     <div class="communication__dashboard">
+      <h2 class="mb-5 text-left pl-4">Q&A</h2>
+      <h5 class="opacify">No questions Yet</h5>
+      <p class="mt-3 opacify">
+       Q&A is a forum where your students can ask questions, hear your responses, and respond to one another. Here’s where you’ll see your courses’ Q&A threads
+      </p>
+     </div>
+    </main>
 
   <!-- PERFORMANCE PAGE -->
-  <main class="performance">
-   <div class="performance__sidebar">
-    <h5 class="overview font-weight-bold">Overview</h5>
-    <h5>Student</h5>
-    <h5>Reviews</h5>
-    <h5>Course engagement</h5>
-    <h5>Traffic & conversion</h5>
-   </div>
-
-   <div class="overview__dashboard">
+  <main class="performance hide">
+   <div class="performance__dashboard">
     <h1 class="mb-5 text-left">Overview</h1>
     <h4 class="mt-3 opacify">
      Get top insights about your performance
     </h4>
-     
-    <div class="overview__data box-shadow">
-     <div class="overview__data-header">
-        <div class="revenue">
-         <span class="revenue__total ovr-small">Total revenue</span>
-         <p class="revenue__price ovr-big">
-          $0.00
-         </p>
-         <span class="revenue__month ovr-medium">
-          $0.00 this month
-         </span>
-        </div>
-        <div class="enrollment">
-         <span class="enrollment__total ovr-small">Total enrollments</span>
-         <p class="enrollment__num ovr-big">
-          0
-         </p>
-         <span class="enrollment__total ovr-medium">
-          0 this month
-         </span>
-        </div>
-        <div class="rating">
-         <span class="rating__text ovr-small">Instructor rating</span>
-         <p class="rating__num ovr-big">
-          0.00
-         </p>
-         <span class="rating__total ovr-medium">
-          0 ratings this month
-         </span>
-        </div>
+
+    <div class="performance__data box-shadow">
+     <div class="performance__data-header">
+      <div class="revenue">
+       <span class="revenue__total ovr-small">Total revenue</span>
+       <p class="revenue__price ovr-big">
+        $0.00
+       </p>
+       <span class="revenue__month ovr-medium">
+        $0.00 this month
+       </span>
+      </div>
+      <div class="enrollment">
+       <span class="enrollment__total ovr-small">Total enrollments</span>
+       <p class="enrollment__num ovr-big">
+        0
+       </p>
+       <span class="enrollment__total ovr-medium">
+        0 this month
+       </span>
+      </div>
+      <div class="rating">
+       <span class="rating__text ovr-small">Instructor rating</span>
+       <p class="rating__num ovr-big">
+        0.00
+       </p>
+       <span class="rating__total ovr-medium">
+        0 ratings this month
+       </span>
+      </div>
      </div>
 
-     <div class="overview__display">
-      <div class="overview__display-range">
-       Date range: <span class="range">Last 12 months 
+     <div class="performance__display">
+      <div class="performance__display-range">
+       Date range: <span class="range">Last 12 months
         <i class="fa fa-angle-down" aria-hidden="true"></i></span>
       </div>
-      <div class="overview__display-table">
+      <div class="performance__display-table">
        <p>No data to display</p>;
       </div>
      </div>
-    
+     <span class="report"> <a href="#">Revenue Report</a> </span>
     </div>
-    <span class="report"> <a href="#">Revenue Report</a> </span>
+
    </div>
   </main>
 
-  <!-- FOOTER SECTION -->
-  <footer class="footer" id="footer">
-   <div class="footer__copyright">
-    <span class="logo"><a href="index.html"><img src="img/codaclogo.png" alt=""></a></span>
-    <span class="ml-3 opacify">Copyright &copy; 2020 Codec, Inc.</span>
-   </div>
-   <ul class="copyright__links">
-    <li class="mr-3"><a href="#">Terms</a></li>
-    <li><a href="#">Privacy Policy and Cookie Policy</a></li>
-   </ul>
+  <!-- TOOLS PAGE -->
+  <main class="tools hide">
+   <div class="tools__dashboard px-5">
+    <h1 class="mb-5 text-left">Tools</h1>
 
-   <div class="lang dropup opacify">
-    <i class="fas fa-globe" id="dropdownlanguage" data-toggle="dropdown" aria-haspopup="true"
-    aria-expanded="false"></i>
-    <span aria-hidden="true" id="dropdownlanguage" data-toggle="dropdown" aria-haspopup="true"
-    aria-expanded="false"><strong>English</strong></span>
-    <i class="fa fa-angle-down" aria-hidden="true"></i>
+   <div class="tools__box">
 
-    <div class="dropdown-menu" aria-labelledby="dropdownlanguage">
-     <li class="list-group-item">
-      <a href="#">French</a>
-     </li>
-     <li class="list-group-item">
-      <a href="#">Deutsch</a>
-     </li>
-     <li class="list-group-item">
-      <a href="#">Italiano</a>
-     </li>
+    <div class="card-box">
+     <div class="card py-4 mr-4">
+      <i class="fas fa-sticky-note text-danger"></i>
+      <div class="card-body">
+       <h4 class="card-title">Test Video</h4>
+       <p class="card-text">
+        Get free feedback from Codac video experts
+        on your audio, video, and delivery.
+       </p>
+      </div>
+     </div>
+     <div class="card py-4">
+      <i class="fas fa-chart-bar text-danger"></i>
+      <div class="card-body">
+       <h4 class="card-title">Marketplace Insights</h4>
+       <p class="card-text">
+        Get Codac-wide market data to create successful courses.
+       </p>
+      </div>
+     </div>
     </div>
+
+   </div> 
    </div>
-  </footer>
+  </main>
+
+  <!-- RESOURCE PAGE -->
+  <main class="resource hide">
+   <div class="resource__dashboard px-5">
+    <h1 class="mb-5 text-left">Resources</h1>
+
+   <div class="resource__box">
+    <div class="card-box">
+     <div class="card py-4 mr-4">
+      <i class="fas fa-globe text-danger"></i>
+      <div class="card-body">
+       <h4 class="card-title">Instructor Community</h4>
+       <p class="card-text">
+        Share your progress and ask other instrucors questions in our community.
+       </p>
+      </div>
+     </div>
+     <div class="card py-4">
+      <i class="fas fa-comment-dots text-danger"></i>
+      <div class="card-body">
+       <h4 class="card-title">Help and Support</h4>
+       <p class="card-text">
+       Can't find what you need? Reach out to our support team.
+       </p>
+      </div>
+     </div>
+    </div>
+
+   </div> 
+   </div>
+  </main>
+
  </div>
+
+ <!-- FOOTER SECTION -->
+ <footer class="footer" id="footer">
+  <div class="footer__copyright">
+   <span class="logo"><a href="index.html"><img src="img/codaclogo.png" alt=""></a></span>
+   <span class="ml-3 opacify">Copyright &copy; 2020 Codec, Inc.</span>
+  </div>
+  <ul class="copyright__links">
+   <li class="mr-3"><a href="#">Terms</a></li>
+   <li><a href="#">Privacy Policy and Cookie Policy</a></li>
+  </ul>
+
+  <div class="lang dropup opacify">
+   <i class="fas fa-globe" id="dropdownlanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+   <span aria-hidden="true" id="dropdownlanguage" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false"><strong>English</strong></span>
+   <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+   <div class="dropdown-menu" aria-labelledby="dropdownlanguage">
+    <li class="list-group-item">
+     <a href="#">French</a>
+    </li>
+    <li class="list-group-item">
+     <a href="#">Deutsch</a>
+    </li>
+    <li class="list-group-item">
+     <a href="#">Italiano</a>
+    </li>
+   </div>
+  </div>
+ </footer>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>

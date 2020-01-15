@@ -1,12 +1,14 @@
 .user {
- position: absolute;
- right: 10px;
- top: 10px;
- z-index: 150;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
   padding: 0.8rem 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width: 99%;
+  margin: auto;
 
   span {
     padding: 0.4rem 0.5rem;
@@ -35,8 +37,8 @@
     -o-border-radius: 50%;
 
     li {
-     border: none;
-     outline: none;
+      border: none;
+      outline: none;
     }
   }
 }

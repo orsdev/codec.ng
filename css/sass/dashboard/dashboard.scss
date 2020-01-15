@@ -1,6 +1,7 @@
-@import "components/utilities";
 @import "components/user";
 @import "components/sidebar";
+@import "components/footer";
+@import "components/mobileNav";
 
 @import "components/courses/createcourse";
 @import "components/courses/engaging";
@@ -9,13 +10,15 @@
 @import "components/courses/resources";
 @import "components/courses/ready";
 
-@import "components/communication/communication";
 @import "components/performance/performance";
+@import "components/communication/communication";
+@import "components/tools/tools";
+@import "components/resources/resources";
 
-@import "components/footer";
-@import "components/mobilenav";
+@import "components/utilities";
 @import "components/responsive";
- 
+
+
 *,
 *::before,
 *::after {
@@ -34,39 +37,8 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Times New Roman", Times, san-serif;
-  position: relative;
-}
-
-.wrapper {
- width: 100%;
-  position: relative;
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  gap: 4px;
-}
-
-main {
-  position: relative;
-  z-index: 100;
-  width: 99%;
-  margin: auto;
-  padding: 0 2rem;
-  padding-right: 3.5rem;
-  // outline: 2px solid red;
 }
 
 .courses {
- padding-top: 80px;
- display: none;
-}
-
-.communication {
- height: 100vh;
- padding: 0;
- display: none;
-}
-
-.performance {
- height: 100vh;
- padding: 0;
+ margin-left: 44px;
 }
