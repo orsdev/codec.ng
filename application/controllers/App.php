@@ -111,4 +111,12 @@ class App extends CI_Controller {
 
 	}
 
+	public function dashboard() {
+		$this->load->view('dashboard');
+	}
+
+	public function createcourse() {
+		$this->load->view('createcourse');
+	}
+
 }

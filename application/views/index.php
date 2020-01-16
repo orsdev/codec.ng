@@ -36,6 +36,8 @@
  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/slick-theme.css" />
  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/slick.css" />
 
+
+
  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
  <title>Codec | E-learning</title>
 </head>
@@ -96,8 +98,8 @@
 
      <div class="auth">
       <div class="auth__buttons">
-       <button class="btn btn-success signup-btn">Sign Up</button>
-       <button class="btn text-light login-btn">Log In</button>
+       <button class="btn btn-success signup-btn" data-target="#signupModal" data-toggle="modal">Sign Up</button>
+			 <button class="btn text-light login-btn" data-target="#loginModal" data-toggle="modal">Log In</button>
        
        <span class="language">
         <span class="abbriev">en</span>
@@ -1700,6 +1702,10 @@
    </div>
   </footer>
  </section>
+
+
+ <?php include('fragments/modals.php'); ?>
+ 	
 
  <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
