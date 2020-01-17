@@ -85,7 +85,7 @@ class App extends CI_Controller {
 			echo '<div class="success">Your registration was successfull, Check your mail for a confirmation link</li>';
 			
 			// send mail here
-			$email = new Email();  //create object 
+			$emailObj = new Email();  //create object 
 			
 			// Email body content
             $body = "<h1>Welcome to Codac</h1>
@@ -93,7 +93,7 @@ class App extends CI_Controller {
                 <button>Activate Account</button>";
             
         
-            $response = $email->sendMail("john.ebri@yahoo.com", "test@codac.pulaakutrade.com", "Test Mail", "Testing mail",  $body); //call function
+            $response = $emailObj->sendMail($email, "test@codac.pulaakutrade.com", "Codac", "Activate Your Account",  $body); //call function
            
             // sendMail($to, $from, $from_name, $subject, $body);
             
@@ -119,4 +119,6 @@ class App extends CI_Controller {
 		$this->load->view('createcourse');
 	}
 
-}
+
+
+} // end of app controller
