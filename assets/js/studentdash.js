@@ -92,17 +92,17 @@ $(document).ready(function () {
 
   if (target.classList.contains('prof')) {
 
-   $('.dashboard__widget').css('display' , 'grid');
-   $('.profile__widget').css('display' , 'none');
-   $('.profile').toggleClass('active-blue');
-   $('.dash').toggleClass('active-blue');
+   $('.dashboard__widget').css('display' , 'none');
+   $('.profile__widget').css('display' , 'block');
+   $('.profile').addClass('active-blue');
+   $('.dash').removeClass('active-blue');
   }
 
   if (target.classList.contains('dassh')) {
-   $('.dashboard__widget').css('display' , 'none');
-   $('.profile__widget').css('display' , 'block');
-   $('.dash').toggleClass('active-blue');
-   $('.profile').toggleClass('active-blue');
+   $('.dashboard__widget').css('display' , 'grid');
+   $('.profile__widget').css('display' , 'none');
+   $('.dash').addClass('active-blue');
+   $('.profile').removeClass('active-blue');
   }
  })
 
