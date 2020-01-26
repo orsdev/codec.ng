@@ -83,6 +83,19 @@
 }
 
 @media (max-width: 550px) {
+  
+  .dashboard__info {
+   &-img {
+    width: 140px;
+    height: 140px;
+   }
+
+   img {
+    width: 130px;
+    height: 130px;
+  }
+  }
+   
   .group-2 {
     display: flex !important;
     flex-direction: column;
@@ -125,5 +138,25 @@
   .language__globe {
    position: absolute;
    top: 100px;
+ }
+
+ .profile__widget {
+  h1 {
+   font-size: 2.3rem;
+  }
+ }
+
+ .form-details-container {
+  grid-template-columns: 1fr !important;
+ }
+
+ .form-bg {
+  margin-top: 20px;
+  padding: 10px !important;
+ }
+
+ .widget {
+  padding-left: 20px;
+  padding-right: 20px;
  }
 }
