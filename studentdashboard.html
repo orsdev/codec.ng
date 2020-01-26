@@ -58,12 +58,12 @@
         <i class="fa fa-angle-up" aria-hidden="true"></i>
        </li>
        <li class="ml-3 toggle-2">
-        <a class="text-light" href="#">Lorem Ipsum</a>
+        <a class="text-light" href="#">Lorem Ips</a>
         <i class="fa fa-angle-down" aria-hidden="true"></i>
         <i class="fa fa-angle-up" aria-hidden="true"></i>
        </li>
        <li class="ml-3 toggle-3">
-        <a class="text-light" href="#">Lorem Ipsum</a>
+        <a class="text-light" href="#">Lorem</a>
         <i class="fa fa-angle-down" aria-hidden="true"></i>
         <i class="fa fa-angle-up" aria-hidden="true"></i>
        </li>
