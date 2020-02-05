@@ -302,7 +302,7 @@
     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptates fugit laborum deleniti
      ullam debitis obcaecati labore magnam quae eius.</p>
     <div class="card-body">
-     <img class="card-img-top" src="img/user.png" alt="">
+     <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/user.png" alt="">
      <p class="name">Justin Blake<span class="role">Web Developer</p>
     </div>
    </div>
@@ -310,7 +310,7 @@
     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptates fugit laborum deleniti
      ullam debitis obcaecati labore magnam quae eius.</p>
     <div class="card-body">
-     <img class="card-img-top" src="img/user.png" alt="">
+     <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/user.png" alt="">
      <p class="name">Justin Blake<span class="role">Web Developer</p>
     </div>
    </div>
@@ -318,7 +318,7 @@
     <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptates fugit laborum deleniti
      ullam debitis obcaecati labore magnam quae eius.</p>
     <div class="card-body">
-     <img class="card-img-top" src="img/user.png" alt="">
+     <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/user.png" alt="">
      <p class="name">Justin Blake<span class="role">Web Developer</p>
     </div>
    </div>

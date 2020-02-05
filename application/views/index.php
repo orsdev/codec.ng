@@ -99,7 +99,7 @@
        <button class="btn btn-success signup-btn" data-target="#signupModal" data-toggle="modal">Sign Up</button>
        <button class="btn text-light login-btn" data-target="#loginModal" data-toggle="modal">Log In</button>
 
-       <span class="language">
+       <span class="language__select">
         <span class="abbriev">en</span>
         <i class="fa fa-globe" aria-hidden="true"></i>
        </span>

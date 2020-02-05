@@ -71,7 +71,7 @@
      </div>
      <div class="auth">
       <span class="user__pic">
-       <img src="img/user.png" alt="user" style="width: 30px;">
+       <img src="<?php echo base_url(); ?>assets/img/user.png" alt="user" style="width: 30px;">
       </span>
       <div class="notification">
        <i class="fa fa-bell-o" aria-hidden="true"></i>
@@ -179,7 +179,7 @@
 
    <div class="dashboard__info">
     <div class="dashboard__info-img">
-     <img src="img/user.png" alt="user picture">
+     <img src="<?php echo base_url(); ?>assets/img/user.png" alt="user picture">
     </div>
 
     <div class="dashboard__info-name mt-1">
@@ -325,7 +325,7 @@
   <footer class="footer section-padding">
    <div class="navigation__container w-100">
     <div class="footer__navigation">
-     <img src="img/footer-triangles.png" alt="footer bg" class="footer__bg">
+     <img src="<?php echo base_url(); ?>assets/img/footer-triangles.png" alt="footer bg" class="footer__bg">
      <div class="container">
       <div class="nav-container">
        <h6 class="footer__header one">ABOUT CODAC
