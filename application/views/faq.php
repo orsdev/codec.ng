@@ -322,7 +322,7 @@
    <h6 class="footer__header">MORE</h6>
    <ul class="footer__links">
     <li class="nav-item">
-     <a href="#" class="nav-link">New & Press</a>
+     <a href="#" class="nav-link">News & Press</a>
     </li>
     <li class="nav-item">
      <a href="#" class="nav-link">FAQ</a>
