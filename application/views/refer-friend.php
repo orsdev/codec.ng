@@ -25,8 +25,8 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
- <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/faq.css">
- <title>Codac | Faq </title>
+ <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/refer-friend.css">
+ <title>Codac | Refer A Friend </title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
    <div class="topnav__bg">
     <div class="group-1">
      <div class="topnav__logo">
-	   <a href="index.php" class="navbar-brand">
+       <a href="index.php" class="navbar-brand">
        <img src="<?php echo base_url(); ?>assets/img/codaclogo.png" alt="codac logo" style="width: 44px;">
 	   </a>
      </div>
@@ -163,133 +163,121 @@
    </div>
   </div>
  </section>
- <section class="container-fluid py-2 px-5 hero__header">
-  <h1 class="main-header">FREQUENTLY ASK QUESTION</h1>
-  <h4 class="main-sub-header">How can I help?</h4>
+
+ <!-- HERO SECTION -->
+ <section class="hero">
+  <div class="container-fluid text-light text-center">
+   <h1 class="main-header">Refer A Friend and Earn Rewards</h1>
+   <p class="paragraph">
+    Refer your friends to Codac and earn FREE Digital Ceritificates and Digital Diplomas.
+    Refer as many people as you want to. <em>The more you refer, the more you could earn!</em>
+    <a href="#">
+     <button class="btn btn-lg btn-md btn-success d-block mt-3 mx-auto">Start referring my friends
+     </button>
+    </a>
+   </p>
+  </div>
  </section>
- <section class="container-fluid hero__bg">
-  <figure class="figure px-5">
-   <figcaption class="figure-caption text-xs-right">
-    Welcome to Codac's Help Center; where all your most commonly asked questions are answered.
-    Before contacting us, use the search (above) or browse through our categories (left) to try and find your answer.
-   </figcaption>
-   <img src="<?php echo base_url(); ?>assets/img/faq-media/faq-people.png" class="figure-img" alt="hero-background">
-  </figure>
+ <!-- STEPS SECTION -->
+ <section class="steps py-3">
+  <div class="container mx-auto">
+   <div class="steps__card">
+    <div class="invite">
+     <div class="steps__header">
+      <h3 class="sub-header">Share</h3>
+      <img src="<?php echo base_url(); ?>assets/img/refer-friend-files/invite.png" alt="invite-image">
+     </div>
+     <div class="steps-body">
+      <p class="paragraph-header">Step 1</p>
+      <p class="paragraph">
+       Share your <a href="#">unique link</a>
+       with your friends, family, or contacts through
+       social media or email.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="steps__card arrow">
+    <img src="<?php echo base_url(); ?>assets/img/refer-friend-files/arrow.png" alt="arrow" class="rotate">
+   </div>
+   <div class="steps__card">
+    <div class="complete">
+     <div class="steps__header">
+      <h3 class="sub-header">Complete</h3>
+      <img src="<?php echo base_url(); ?>assets/img/refer-friend-files/complete.png" alt="complete-image">
+     </div>
+     <div class="steps-body">
+      <p class="paragraph-header">Step 2</p>
+      <p class="paragraph">
+       Your friends register on Alison through your
+       <a href="#">unique link</a>, and complete a course within 30 days of registering.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="steps__card arrow">
+    <img src="<?php echo base_url(); ?>assets/img/refer-friend-files/arrow.png" alt="arrow">
+   </div>
+   <div class="steps__card">
+    <div class="reward">
+     <div class="steps__header">
+      <h3 class="sub-header">Earn Rewards</h3>
+      <img src="<?php echo base_url(); ?>assets/img/refer-friend-files/earn.png" alt="earn-image">
+     </div>
+     <div class="steps-body">
+      <p class="paragraph-header">Step 3</p>
+      <p class="paragraph">
+       You’re rewarded with a FREE Digital Certificate/Diploma download and your friends get a 10% DISCOUNT on their
+       first
+       purchase.
+      </p>
+     </div>
+    </div>
+   </div>
  </section>
- <section class="container-fluid question px-5 py-2">
-  <div class="row">
-   <div class="question-container">
-    <div class="question-body">
-     <img src="<?php echo base_url(); ?>assets/img/faq-media/learning.png" alt="learning">
-     <div class="question-body-text">
-      <h5 class="sub-header">Learning</h5>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea suscipit voluptatem eos veritatis obcaecati
-       incidunt nihil.</p>
-     </div>
-    </div>
-    <div class="question-footer bg-success text-light px-4 mt-1">
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tenetur mollitia quisquam cum culpa libero
-      recusandae delectus totam, nam eum magni animi alias labore quis debitis unde necessitatibus sapiente laborum!
-     </p>
-    </div>
-   </div>
-  </div>
-  <div class="row">
-   <div class="question-container">
-    <div class="question-body">
-     <img src="<?php echo base_url(); ?>assets/img/faq-media/account.png" alt="account">
-     <div class="question-body-text">
-      <h5 class="sub-header">Account</h5>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea suscipit voluptatem eos veritatis obcaecati
-       incidunt nihil.</p>
-     </div>
-    </div>
-    <div class="question-footer bg-success text-light px-4 mt-1">
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tenetur mollitia quisquam cum culpa libero
-      recusandae delectus totam, nam eum magni animi alias labore quis debitis unde necessitatibus sapiente laborum!
-     </p>
-    </div>
-   </div>
-  </div>
-  <div class="row">
-   <div class="question-container">
-    <div class="question-body">
-     <img src="<?php echo base_url(); ?>assets/img/faq-media/refer-a-friend.png" alt="refer-a-friend">
-     <div class=" question-body-text">
-      <h5 class="sub-header">Refer A Friend</h5>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea suscipit voluptatem eos veritatis obcaecati
-       incidunt nihil.</p>
-     </div>
-    </div>
-    <div class="question-footer bg-success text-light px-4 mt-1">
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tenetur mollitia quisquam cum culpa libero
-      recusandae delectus totam, nam eum magni animi alias labore quis debitis unde necessitatibus sapiente laborum!
-     </p>
-    </div>
-   </div>
-  </div>
-  <div class="row">
-   <div class="question-container">
-    <div class="question-body">
-     <img src="<?php echo base_url(); ?>assets/img/faq-media/donations.png" alt="donation">
-     <div class="question-body-text">
-      <h5 class="sub-header">Donations</h5>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea suscipit voluptatem eos veritatis obcaecati
-       incidunt nihil.</p>
-     </div>
-    </div>
-    <div class="question-footer bg-success text-light px-4 mt-1">
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tenetur mollitia quisquam cum culpa libero
-      recusandae delectus totam, nam eum magni animi alias labore quis debitis unde necessitatibus sapiente laborum!
-     </p>
-    </div>
-   </div>
-  </div>
-  <div class="row">
-   <div class="question-container">
-    <div class="question-body">
-     <img src="<?php echo base_url(); ?>assets/img/faq-media/mobile.png" alt="mobile-application">
-     <div class="question-body-text">
-      <h5 class="sub-header">Mobile Applications</h5>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea suscipit voluptatem eos veritatis obcaecati
-       incidunt nihil.</p>
-     </div>
-    </div>
-    <div class="question-footer bg-success text-light px-4 mt-1">
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tenetur mollitia quisquam cum culpa libero
-      recusandae delectus totam, nam eum magni animi alias labore quis debitis unde necessitatibus sapiente laborum!
-     </p>
-    </div>
-   </div>
-  </div>
-  <div class="row">
-   <div class="question-container">
-    <div class="question-body">
-     <img src="<?php echo base_url(); ?>assets/img/faq-media/payment.png" alt="certiction-and-payment">
-     <div class="question-body-text">
-      <h5 class="sub-header">Certification and Payments</h5>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea suscipit voluptatem eos veritatis obcaecati
-       incidunt nihil.</p>
-     </div>
-    </div>
-    <div class="question-footer bg-success text-light px-4 mt-1">
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tenetur mollitia quisquam cum culpa libero
-      recusandae delectus totam, nam eum magni animi alias labore quis debitis unde necessitatibus sapiente laborum!
-     </p>
-    </div>
-   </div>
-  </div>
-  <footer class="footer-social mt-3">
-   <a href="#">
-    <i class="fa fa-facebook" aria-hidden="true"></i>
+ <!-- REFER REWARDS SECTION -->
+ <section class="refer-rewards pt-5 text-center">
+  <div class="container">
+   <h1 class="sub-header mb-3">Refer A Friend Rewards</h1>
+   <p class="paragraph opacify">
+    3 friends complete a course = <strong>you earn a Free Digital Certificate.</strong>
+   </p>
+   <p class="paragraph opacify">
+    25 friends complete a course = <strong>you earn a Free Digital Diploma.</strong>
+   </p>
+
+   <p class="paragraph opacify mt-5">
+    Check the progress of your referred friends anytime through your Refer a Friend Progress table on your Stats Page .
+    <span class="d-block">
+     You can also check them on your <a href="#">Dashboard.</a>
+    </span>
+   </p>
+   <a href="#" class="text-decoration-none mt-2 d-block stats-btn">
+    <button class="btn btn-success btn-md">See my stats</button>
    </a>
-   <a href="#">
-    <i class="fa fa-twitter" aria-hidden="true"></i>
-   </a>
-   <a href="#">
-    <i class="fa fa-linkedin" aria-hidden="true"></i>
-   </a>
-  </footer>
+   <p class="paragraph mt-4">
+    <strong>
+     Your friends will get a 10% DISCOUNT on their first purchase if they register through your link and complete a
+     course.
+     They must register on Codac through your link and complete a course within 30 days.
+    </strong>
+   </p>
+  </div>
+  <div class="refer-footer mt-5">
+   <p class="paragraph unique-link">
+    <a href="#">Sign up</a> or <a href="#">Log in</a>
+    now to reveal your unique link.
+   </p>
+   <p class="paragrahp mt-4">
+    <small>
+     Note: Rewards can’t be claimed more than once and can’t be reversed. Refer to our <a href="#">FAQs </a> for more
+     information.
+    </small>
+   </p>
+  </div>
+  <div class="refer-footer-bg">
+   &nbsp;
+  </div>
  </section>
  <section class="footer">
   <div class="nav-container">
@@ -338,6 +326,7 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/plugin.js"></script>
+
 </body>
 
 </html>
