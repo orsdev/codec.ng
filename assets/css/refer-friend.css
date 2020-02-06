@@ -405,7 +405,8 @@
 .refer-rewards .stats-btn {
   margin-left: auto;
   margin-right: auto;
-  width: 110px;
+  width: 120px;
+  outline: 2px solid red;
 }
 .refer-rewards .refer-footer {
   background: #f8f8f8;
