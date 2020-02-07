@@ -402,6 +402,7 @@
   display: inline-block;
   width: 260px;
   padding: 15px;
+  vertical-align: middle;
 }
 .about-empowerment-card span {
   height: 75px;
@@ -415,6 +416,11 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+.about-empowerment-card p {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .about-empowerment-card i {
   color: white;
@@ -533,6 +539,9 @@
 
   .about-empowerment-card li {
     width: 90%;
+  }
+  .about-empowerment-card p {
+    width: 100%;
   }
 }
 *,
