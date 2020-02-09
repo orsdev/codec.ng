@@ -6,25 +6,23 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <meta name='keywords' content='Codac, E-learning,favourite courses' />
- <meta name='description'
-  content='E-learning site, where registered students learn their favourite courses at their own pace' />
+ <meta name='description' content='E-learning site, where registered students learn their favourite courses at their own pace' />
  <meta property="og:title" content="Codac | E-learning,favourite courses" />
  <meta property="og:type" content="website" />
  <meta property="og:image" content="">
  <meta property="og:url" content="" />
- <meta property="og:description"
-  content="E-learning site, where registered students learn there favourite courses at their own pace" />
+ <meta property="og:description" content="E-learning site, where registered students learn there favourite courses at their own pace" />
  <meta name="twitter:card" content="">
  <meta name="twitter:site" content="">
  <meta name="twitter:creator" content="">
  <meta name="twitter:url" content="">
  <meta name="twitter:title" content="Codac | E-learning,favourite courses">
- <meta name="twitter:description"
-  content="E-learning site, where registered students learn there favourite courses at their own pace">
+ <meta name="twitter:description" content="E-learning site, where registered students learn there favourite courses at their own pace">
  <meta name="twitter:image" content="">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/nav.css">
  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/refer-friend.css">
  <title>Codac | Refer A Friend </title>
 </head>
@@ -36,14 +34,13 @@
    <div class="topnav__bg">
     <div class="group-1">
      <div class="topnav__logo">
-       <a href="index.php" class="navbar-brand">
+      <a href="index.php" class="navbar-brand">
        <img src="<?php echo base_url(); ?>assets/img/codaclogo.png" alt="codac logo" style="width: 44px;">
-	   </a>
+      </a>
      </div>
      <div class="form-group form__search m-0">
       <form class="form-inline my-2 my-lg-0" id="searchcourse">
-       <input maxlength="200" autocomplete="off" placeholder="Search for courses" id="autocomplete" name="search"
-        type="text" class="form-control form-control-lg topnav__search">
+       <input maxlength="200" autocomplete="off" placeholder="Search for courses" id="autocomplete" name="search" type="text" class="form-control form-control-lg topnav__search">
        <button class="topnav__search-btn btn btn-primary">
         <i class="fa fa-search" aria-hidden="true"></i>
        </button>
@@ -54,17 +51,17 @@
      <div class="topnav__links">
       <ul class="topnav__links-container">
        <li class="toggle-1">
-        <a class="text-light" href="#">Lorem</a>
+        <a class="text-light" href="javascript:void(0)">Lorem</a>
         <i class="fa fa-angle-down" aria-hidden="true"></i>
         <i class="fa fa-angle-up" aria-hidden="true"></i>
        </li>
        <li class="ml-3 toggle-2">
-        <a class="text-light" href="#">Lorem Ips</a>
+        <a class="text-light" href="javascript:void(0)">Lorem Ips</a>
         <i class="fa fa-angle-down" aria-hidden="true"></i>
         <i class="fa fa-angle-up" aria-hidden="true"></i>
        </li>
        <li class="ml-3 toggle-3">
-        <a class="text-light" href="#">Lorem</a>
+        <a class="text-light" href="javascript:void(0)">Lorem</a>
         <i class="fa fa-angle-down" aria-hidden="true"></i>
         <i class="fa fa-angle-up" aria-hidden="true"></i>
        </li>
@@ -72,7 +69,7 @@
      </div>
      <div class="auth">
       <span class="user__pic">
-       <img src="<?php echo base_url(); ?>assets/img/user.png" alt="user" style="width: 30px;">
+       <img src="<?php echo base_url(); ?>assets/img/user.png" alt="user" style="width: 30px;" class="user__image">
       </span>
       <div class="notification">
        <i class="fa fa-bell-o" aria-hidden="true"></i>
@@ -163,7 +160,25 @@
    </div>
   </div>
  </section>
-
+ <aside class="user_menu">
+  <i class="fa fa-caret-up" aria-hidden="true"></i>
+  <div class="user_details">
+   <img src="<?php echo base_url(); ?>assets/img/user.png" alt="">
+   <div class="user_btn">
+    <p class="name">User name</p>
+    <a href="#">
+     <button class="btn btn-danger">View Profile</button>
+    </a>
+   </div>
+  </div>
+  <div class="actions">
+   <p><a href="#"><i class="far fa-play-circle"></i>Resume Study</a></p>
+   <p><a href="#"><i class="fa fa-user"></i>My Dashboard</a></p>
+   <p><a href="#"><i class="fa fa-cog"></i>Account Settings</a></p>
+   <p><a href="#"><i class="fa fa-question-circle"></i>Help</a></p>
+   <p><i class="fa fa-power-off"></i>Logout</p>
+  </div>
+ </aside>
  <!-- HERO SECTION -->
  <section class="hero">
   <div class="container-fluid text-light text-center">
@@ -322,10 +337,10 @@
   </div>
   </div>
  </section>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/plugin.js"></script>
+ <script src="<?php echo base_url(); ?>assets/js/nav.js"></script>
 
 </body>
 
