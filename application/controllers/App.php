@@ -10,6 +10,10 @@ class App extends CI_Controller {
 		// $this->load->library('session');
 		$this->load->helpers('url');
 		$this->load->database();
+		
+		require_once(APPPATH.'controllers/Email.php'); //include Email controller
+        
+		   
 	}
 
 	public function index()
@@ -79,10 +83,40 @@ class App extends CI_Controller {
 			$this->db->set('date_time', 'NOW()', FALSE);
 			$this->db->insert('tutors', $tutorData);
 			echo '<div class="success">Your registration was successfull, Check your mail for a confirmation link</li>';
+			
+			// send mail here
+			$email = new Email();  //create object 
+			
+			// Email body content
+            $body = "<h1>Welcome to Codac</h1>
+                <p>Click on the button below to activate your account</p>
+                <button>Activate Account</button>";
+            
+        
+            $response = $email->sendMail("john.ebri@yahoo.com", "test@codac.pulaakutrade.com", "Test Mail", "Testing mail",  $body); //call function
+           
+            // sendMail($to, $from, $from_name, $subject, $body);
+            
+// 			$to   = 'john.ebri@yahoo.com';
+//             $from = 'test@codac.pulaakutrade.com';
+//             $name = 'PHPMailer and CodeIgniter';
+//             $subj = 'Test Message';
+//             $msg = 'This is mail about testing mailing using PHP.';
+        
+//             $error=smtpmailer($to,$from, $name ,$subj, $msg);
+			
 			// clear the form
 			echo '<script>document.getElementById("signupform").reset()</script>';
 		}
 
+	}
+
+	public function dashboard() {
+		$this->load->view('dashboard');
+	}
+
+	public function createcourse() {
+		$this->load->view('createcourse');
 	}
 
 }
